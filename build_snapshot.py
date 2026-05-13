@@ -1,18 +1,28 @@
 #!/usr/bin/env python3
 """
-Build conferences_2026-05-13.tsv  and  conferences_2026-05-13.xlsx
+Build conferences_<today>.tsv  and  conferences_<today>.xlsx
 for AG Schuck quantum-photonics conference tracker.
+
+Weekly workflow
+───────────────
+1. Auto-detects the most recent conferences_YYYY-MM-DD.tsv in OUTDIR and
+   loads it as the starting point (all existing rows are preserved).
+2. The EVENTS list below carries the *curated / updated* rows for this run.
+   Any id present in EVENTS overrides the matching row from the previous TSV;
+   ids found only in the previous TSV are carried forward unchanged.
+3. Rows are NEVER deleted — passed events stay as status=archived.
+4. Outputs conferences_<today>.tsv  +  conferences_<today>.xlsx.
 """
 
-import csv, os
+import csv, glob, os, re
 from datetime import date, timedelta
 from openpyxl import Workbook
-from openpyxl.styles import PatternFill, Font, Alignment, Border, Side, PatternFill
+from openpyxl.styles import PatternFill, Font, Alignment
 from openpyxl.utils import get_column_letter
 
-TODAY     = date(2026, 5, 13)
-SNAPSHOT  = "2026-05-13"
-OUTDIR    = "/home/user/conferences"
+TODAY    = date.today()
+SNAPSHOT = TODAY.isoformat()   # e.g. "2026-05-20"
+OUTDIR   = "/home/user/conferences"
 
 COLS = [
     "id", "name", "acronym", "type", "topic_tags",
@@ -1152,17 +1162,67 @@ def write_xlsx(events, path):
     print(f"  XLSX → {path}")
 
 
+# ── previous-snapshot loader ──────────────────────────────────────────────────
+def load_previous_snapshot():
+    """
+    Find the most recent conferences_YYYY-MM-DD.tsv (excluding today's output
+    file if it happens to exist) and return its rows as a dict keyed by id.
+    Returns {} if no previous snapshot is found.
+    """
+    pattern = os.path.join(OUTDIR, "conferences_????-??-??.tsv")
+    candidates = sorted(glob.glob(pattern))
+    # exclude today's file (not yet written, but guard anyway)
+    candidates = [p for p in candidates
+                  if not p.endswith(f"conferences_{SNAPSHOT}.tsv")]
+    if not candidates:
+        return {}
+    latest = candidates[-1]
+    print(f"  Loading previous snapshot: {os.path.basename(latest)}")
+    rows = {}
+    with open(latest, newline="", encoding="utf-8") as f:
+        for r in csv.DictReader(f, delimiter="\t"):
+            rows[r["id"]] = r
+    return rows
+
+
+def merge_events(previous: dict, current_list: list) -> list:
+    """
+    Merge strategy (rows are NEVER deleted):
+    - Start from previous snapshot rows.
+    - Any id in current_list REPLACES the previous row (new data wins).
+    - Any id in previous not present in current_list is carried forward as-is.
+    - Result is sorted: archived last, then by start_date ascending.
+    """
+    merged = dict(previous)           # shallow copy keyed by id
+    for ev in current_list:
+        merged[ev["id"]] = ev         # new/updated rows override
+
+    def sort_key(r):
+        status = r.get("status", "upcoming")
+        sd = r.get("start_date", "TBA")
+        # archived sink to bottom; TBA dates sort after real dates
+        s_order = 1 if status == "archived" else 0
+        d_order = sd if sd != "TBA" else "9999-99-99"
+        return (s_order, d_order)
+
+    return sorted(merged.values(), key=sort_key)
+
+
 # ── main ──────────────────────────────────────────────────────────────────────
 if __name__ == "__main__":
     tsv_path  = os.path.join(OUTDIR, f"conferences_{SNAPSHOT}.tsv")
     xlsx_path = os.path.join(OUTDIR, f"conferences_{SNAPSHOT}.xlsx")
 
-    write_tsv(EVENTS, tsv_path)
-    write_xlsx(EVENTS, xlsx_path)
-    print(f"\nDone. {len(EVENTS)} events written.")
+    previous  = load_previous_snapshot()
+    final     = merge_events(previous, EVENTS)
 
-    # summary stats
+    write_tsv(final, tsv_path)
+    write_xlsx(final, xlsx_path)
+    print(f"\nDone. {len(final)} events total "
+          f"({len(previous)} previous + "
+          f"{len([e for e in EVENTS if e['id'] not in previous])} new).")
+
     from collections import Counter
-    stats = Counter(e["status"] for e in EVENTS)
+    stats = Counter(e["status"] for e in final)
     for s, n in sorted(stats.items()):
         print(f"  {s:15s}: {n}")
