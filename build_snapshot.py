@@ -1,17 +1,22 @@
 #!/usr/bin/env python3
 """
-Build conferences_2026-05-13.tsv  and  conferences_2026-05-13.xlsx
+Build conferences_2026-05-17.tsv  and  conferences_2026-05-17.xlsx
 for AG Schuck quantum-photonics conference tracker.
+
+Run #2 snapshot — updated from conferences_2026-05-13.tsv
+Sources: cleoconference.org, optica.org, ecio-conference.org, spw2026.org,
+         europeanoptics.org, qcrypt.net, qce.quantum.ieee.org, appliedsuperconductivity.org,
+         frontiersinoptics.com, grc.org, europhoton.org, owtnm26.epfl.ch, psc2026.org
 """
 
 import csv, os
-from datetime import date, timedelta
+from datetime import date
 from openpyxl import Workbook
-from openpyxl.styles import PatternFill, Font, Alignment, Border, Side, PatternFill
+from openpyxl.styles import PatternFill, Font, Alignment
 from openpyxl.utils import get_column_letter
 
-TODAY     = date(2026, 5, 13)
-SNAPSHOT  = "2026-05-13"
+TODAY     = date(2026, 5, 17)
+SNAPSHOT  = "2026-05-17"
 OUTDIR    = "/home/user/conferences"
 
 COLS = [
@@ -25,8 +30,6 @@ COLS = [
 DEADLINE_COLS = ["abstract_deadline", "paper_deadline",
                  "registration_deadline", "early_bird_deadline"]
 
-# ── Event data ────────────────────────────────────────────────────────────────
-# Each entry is a dict keyed by COLS.
 # Topic tags drawn from scope vocabulary:
 #   integrated quantum photonics | photonic integrated circuits
 #   single-photon sources | SNSPDs | quantum optics | nonlinear optics
@@ -50,12 +53,10 @@ def ev(id, name, acronym, typ, tags, sd, ed, loc,
         "source_urls": srcs,
     }
 
-LV = SNAPSHOT  # last_verified = today for all rows
-
 EVENTS = [
 
 # ════════════════════════════════════════════════════════════════════════
-#  ARCHIVED — passed before 2026-05-13
+#  ARCHIVED — passed before 2026-05-17
 # ════════════════════════════════════════════════════════════════════════
 ev("benasque-qnp-2025",
    "Quantum Nanophotonics 2025","Benasque QNP","Workshop",
@@ -77,8 +78,7 @@ ev("photonics-north-2025",
 
 ev("benasque-sqt-2025",
    "Spring School on Superconducting Qubit Technology 2025","Benasque SQT",
-   "Summer School",
-   "quantum computing hardware;cryogenic electronics",
+   "Summer School","quantum computing hardware;cryogenic electronics",
    "2025-05-21","2025-05-30","Benasque, Spain",
    "TBA","n/a","TBA","n/a",
    "https://benasque.org/2025sqt/",3,
@@ -228,8 +228,7 @@ ev("piers-fall-2025",
 
 ev("acp-2025",
    "Asia Communications and Photonics Conference 2025","ACP 2025",
-   "Conference",
-   "photonic integrated circuits;quantum communication",
+   "Conference","photonic integrated circuits;quantum communication",
    "2025-11-05","2025-11-08","Jiangsu, China",
    "2025-08-01","TBA","TBA","TBA","TBA",3,
    "Asia-Pacific photonics flagship with quantum sessions",
@@ -433,8 +432,32 @@ ev("ampd-2026",
    "archived","year roll-over",
    "https://www.zib.de/workshop-photonic-devices/"),
 
+# OWTNM 2026 — was at EPFL Lausanne Apr 8-10; the placeholder 'owtnm' is now resolved
+ev("owtnm-2026",
+   "XXXII Optical Wave & Waveguide Theory and Numerical Modelling 2026",
+   "OWTNM 2026","Workshop",
+   "photonic integrated circuits;nanophotonics",
+   "2026-04-08","2026-04-10","Lausanne, Switzerland",
+   "2026-02-06","n/a","2026-03-06","n/a",
+   "https://owtnm26.epfl.ch/",3,
+   "Waveguide modelling workshop relevant to PIC simulation and design",
+   "archived",
+   "new entry (resolved placeholder); Apr 8-10 at EPFL Lausanne; all deadlines passed",
+   "https://owtnm26.epfl.ch/"),
+
+ev("quantum-photonics-erfurt-2026",
+   "Quantum Photonics 2026 Trade Fair & Conference","QP Erfurt 2026","Conference",
+   "integrated quantum photonics;quantum communication;quantum computing hardware",
+   "2026-05-05","2026-05-06","Erfurt, Germany",
+   "TBA","TBA","TBA","TBA",
+   "https://www.quantum-photonics.de/en",3,
+   "German quantum-photonics industry trade fair and specialist conference",
+   "archived",
+   "new entry; 2nd edition; May 5-6 Messe Erfurt; now past",
+   "https://www.quantum-photonics.de/en"),
+
 # ════════════════════════════════════════════════════════════════════════
-#  UPCOMING — 2026 (sorted by start_date)
+#  ONGOING — started today 2026-05-17
 # ════════════════════════════════════════════════════════════════════════
 ev("cleo-2026",
    "Conference on Lasers and Electro-Optics 2026","CLEO 2026","Conference",
@@ -443,10 +466,13 @@ ev("cleo-2026",
    "2025-11-18","n/a","TBA","TBA",
    "https://cleoconference.org/",5,
    "Premier US laser/photonics conference; major IQP, Si-PIC and quantum optics sessions",
-   "upcoming",
-   "confirmed May 17-21 Charlotte Convention Center; starts in 4 days",
-   "https://cleoconference.org/; https://cleoconference.org/registration-2026/"),
+   "ongoing",
+   "STATUS → ongoing (opens today May 17); exhibition May 19-20; 2,000+ technical sessions",
+   "https://cleoconference.org/; https://cleoconference.org/2026-schedule-at-a-glance/"),
 
+# ════════════════════════════════════════════════════════════════════════
+#  UPCOMING — 2026 (sorted by start_date)
+# ════════════════════════════════════════════════════════════════════════
 ev("damop-2026",
    "57th APS Division of Atomic, Molecular and Optical Physics Meeting",
    "DAMOP 2026","Conference",
@@ -455,17 +481,19 @@ ev("damop-2026",
    "TBA","TBA","TBA","TBA",
    "https://aps.org/events/2026/damop-meeting-2026",3,
    "AMO physics flagship with quantum optics and single-photon sessions",
-   "upcoming","confirmed Jun 1-5 Providence RI Convention Center",
+   "upcoming","no change",
    "https://aps.org/events/2026/damop-meeting-2026"),
 
 ev("photonics-north-2026",
    "Photonics North 2026","PN 2026","Conference",
    "silicon photonics;integrated quantum photonics;quantum communication",
-   "2026-06-01","2026-06-04","TBA",
-   "TBA","TBA","TBA","TBA","TBA",3,
+   "2026-06-02","2026-06-05","Québec City, Canada",
+   "TBA","TBA","TBA","TBA",
+   "https://photonicsnorth.com/en",3,
    "Canadian national photonics conference with PIC and quantum sessions",
-   "upcoming","no change; location TBA",
-   "original list"),
+   "upcoming",
+   "location confirmed: Québec City Convention Centre, Jun 2-5",
+   "https://photonicsnorth.com/en"),
 
 ev("cargese-qt-2026",
    "Summer School on Quantum Technologies for Computation and Communication",
@@ -475,7 +503,7 @@ ev("cargese-qt-2026",
    "TBA","n/a","TBA","n/a",
    "https://qt4cc.sciencesconf.org/",4,
    "PhD summer school on quantum computation and communication — ideal for group's PhD students",
-   "upcoming","new entry; Jun 8-20 at Institut d'Études Scientifiques de Cargèse",
+   "upcoming","no change",
    "https://qt4cc.sciencesconf.org/; https://gdr-teq.cnrs.fr/cevent/629/"),
 
 ev("spie-pfq-2026",
@@ -485,8 +513,8 @@ ev("spie-pfq-2026",
    "2026-03-01","n/a","TBA","TBA",
    "https://spie.org/conferences-and-exhibitions/photonics-for-quantum",5,
    "Dedicated quantum photonics conference — bullseye for AG Schuck",
-   "cfp_closed","confirmed Jun 8-11 Waterloo; post-deadline submissions open",
-   "https://spie.org/PFQ26/conferencedetails/photonics-for-quantum"),
+   "cfp_closed","no change; abstract deadline closed Mar 1; registration open",
+   "https://spie.org/conferences-and-exhibitions/photonics-for-quantum"),
 
 ev("islc-2026",
    "30th International Semiconductor Laser Conference","ISLC 2026","Conference",
@@ -496,7 +524,7 @@ ev("islc-2026",
    "https://events.tuni.fi/islc2026/",4,
    "III-V semiconductor laser conference — key for quantum light source development",
    "cfp_closed",
-   "abstract deadline was extended to 2026-02-05 (now closed)",
+   "no change; abstract deadline closed 2026-02-05",
    "https://events.tuni.fi/islc2026/; https://ieeephotonics.org/event/2026-30th-international-semiconductor-laser-conference-islc/"),
 
 ev("grc-quantum-science-2026",
@@ -507,7 +535,7 @@ ev("grc-quantum-science-2026",
    "TBA","n/a","2026-06-28","n/a",
    "https://www.grc.org/quantum-science-conference/2026/",4,
    "GRC on quantum science covering photonic quantum systems and quantum information",
-   "upcoming","new entry; application deadline Jun 28",
+   "upcoming","no change; application deadline Jun 28",
    "https://www.grc.org/quantum-science-conference/2026/"),
 
 ev("icap-2026",
@@ -517,18 +545,18 @@ ev("icap-2026",
    "TBA","TBA","TBA","TBA",
    "https://www.icap29.com/home.html",3,
    "Atomic physics conference with quantum optics and light-matter interaction sessions",
-   "upcoming","confirmed Jun 14-19 Wuhan",
+   "upcoming","no change",
    "https://www.icap29.com/home.html"),
 
 ev("ecio-2026",
    "European Conference on Integrated Optics 2026","ECIO 2026","Conference",
    "integrated quantum photonics;photonic integrated circuits;silicon photonics;nanophotonics",
    "2026-06-15","2026-06-17","Zürich, Switzerland",
-   "TBA","TBA","2026-06-01","2026-05-11",
+   "TBA","TBA","2026-06-01","n/a",
    "https://ecio-conference.org/",5,
-   "Largest European integrated optics conference — core relevance for AG Schuck",
+   "Largest European integrated optics conference — core relevance for AG Schuck; 253 papers, 20+ invited",
    "cfp_closed",
-   "registration deadline Jun 1; early-bird passed May 11; hosted at ETH Zürich",
+   "early-bird (May 11) passed; registration deadline Jun 1 in 15 days (AMBER); hosted at ETH Zürich",
    "https://www.ecio-conference.org/; https://www.ecio-conference.org/deadlines/"),
 
 ev("optica-quantum-2026",
@@ -540,7 +568,7 @@ ev("optica-quantum-2026",
    "https://www.optica.org/events/topical_meetings/quantum/",5,
    "Premier quantum photonics conference spanning PICs, detectors, QKD, and hardware",
    "cfp_closed",
-   "abstract deadline was Feb 10 (closed); registration deadline 2026-05-29",
+   "URGENT: registration deadline 2026-05-29 in 12 days (RED); standard rates since May 1",
    "https://www.optica.org/events/topical_meetings/quantum/; https://www.optica.org/events/topical_meetings/quantum/registration/"),
 
 ev("icop-2026",
@@ -578,10 +606,10 @@ ev("benasque-qsi-2026",
    "integrated quantum photonics;quantum computing hardware;quantum communication",
    "2026-06-21","2026-07-04","Benasque, Spain",
    "TBA","n/a","TBA","n/a",
-   "https://benasque.org/",4,
+   "https://www.benasque.org/2026qsi/",4,
    "Benasque workshop on quantum implementations including photonic platforms",
-   "upcoming","confirmed Jun 21–Jul 4 Benasque",
-   "https://benasque.org/; https://www.benasque.org/new_general/cgi-bin/years.pl?ano=2026"),
+   "upcoming","no change; official URL updated to 2026qsi",
+   "https://www.benasque.org/2026qsi/"),
 
 ev("les-houches-pa-2026",
    "Photons & Atoms 2026 — Les Houches Doctoral School",
@@ -591,7 +619,7 @@ ev("les-houches-pa-2026",
    "TBA","n/a","TBA","n/a",
    "https://photon-atoms-26.leshouches.science/",5,
    "Leading European doctoral school on photons, quantum gases and quantum technologies",
-   "upcoming","new entry; Jun 22–Jul 3; covers quantum optics, light-matter interaction and QT",
+   "upcoming","no change",
    "https://photon-atoms-26.leshouches.science/; https://first-tf.com/doctoral-training-on-atoms-and-photons-ecole-de-physique-des-houches-france-june-22nd-to-july-3rd-2026/"),
 
 ev("iqt-nordics-2026",
@@ -602,7 +630,7 @@ ev("iqt-nordics-2026",
    "TBA","n/a","TBA","TBA",
    "https://iqtevent.com/nordics/",3,
    "Nordic quantum industry conference with hardware and QKD sessions",
-   "upcoming","new entry; Jun 22-24 OsloMet University",
+   "upcoming","no change",
    "https://iqtevent.com/nordics/; https://www.oslomet.no/en/about/events/iqt-nordics-2026"),
 
 ev("quantum-tech-world-2026",
@@ -617,8 +645,7 @@ ev("quantum-tech-world-2026",
 
 ev("oecc-2026",
    "31st OptoElectronics and Communications Conference","OECC 2026",
-   "Conference",
-   "photonic integrated circuits;silicon photonics;quantum communication",
+   "Conference","photonic integrated circuits;silicon photonics;quantum communication",
    "2026-06-28","2026-07-02","Busan, South Korea",
    "TBA","TBA","TBA","TBA","TBA",3,
    "Asia-Pacific optoelectronics and comms conference with PIC sessions",
@@ -634,27 +661,40 @@ ev("quantum-korea-2026",
    "upcoming","no change",
    "https://quantum-korea.kr/en/main"),
 
+ev("eq-summer-school-amsterdam-2026",
+   "European Quantum Technology Summer School 2026",
+   "EQ Summer School 2026","Summer School",
+   "quantum computing hardware;quantum communication;integrated quantum photonics",
+   "2026-07-04","2026-07-11","Amsterdam, Netherlands",
+   "TBA","n/a","TBA","TBA",
+   "https://www.amsterdamuas.com/events/2026/3/european-quantum-technology-summer-school",4,
+   "European quantum technology doctoral/early-career school covering hardware and applications",
+   "upcoming",
+   "new entry; Jul 4-11 Amsterdam; hosted by Amsterdam University of Applied Sciences",
+   "https://www.amsterdamuas.com/events/2026/3/european-quantum-technology-summer-school"),
+
 ev("spw-2026",
    "12th Single Photon Workshop","SPW 2026","Workshop",
    "single-photon sources;SNSPDs;quantum optics;quantum communication",
    "2026-07-06","2026-07-10","Naples, Italy",
-   "TBA","n/a","TBA","TBA",
+   "2026-03-25","n/a","2026-06-28","2026-05-19",
    "https://spw2026.org/",5,
    "THE dedicated single-photon workshop — central to AG Schuck's detector and source work",
    "cfp_closed",
-   "confirmed Jul 6-10 Naples (Univ. Federico II); registration open; abstract submission was via EasyChair",
-   "https://spw2026.org/; https://iqnhub.org/2026-single-photon-workshop-registration-open/"),
+   "abstract deadline was Mar 25 (closed); standard reg deadline Jun 28 (AMBER); early-bird May 19",
+   "https://spw2026.org/; https://spw2026.org/call-for-paper"),
 
 ev("icton-2026",
    "26th International Conference on Transparent Optical Networks",
    "ICTON 2026","Conference",
    "photonic integrated circuits;silicon photonics;quantum communication",
    "2026-07-12","2026-07-16","Prague, Czech Republic",
-   "TBA","TBA","TBA","TBA",
-   "https://www.gov.pl/web/instytut-lacznosci/icton-2026",3,
+   "TBA","2026-06-01","TBA","TBA",
+   "https://icton2026.ufe.cz/",3,
    "Transparent optical networks with PIC and quantum photonics tracks",
-   "upcoming","no change",
-   "https://www.gov.pl/web/instytut-lacznosci/icton-2026"),
+   "cfp_closed",
+   "website updated to icton2026.ufe.cz; camera-ready/post-deadline papers due Jun 1",
+   "https://icton2026.ufe.cz/"),
 
 ev("ieee-sum-2026",
    "IEEE Summer Topicals Meeting Series 2026","IEEE SUM 2026","Conference",
@@ -674,7 +714,7 @@ ev("grc-plasmonics-nano-2026",
    "TBA","n/a","2026-06-21","n/a",
    "https://www.grc.org/plasmonics-and-nanophotonics-conference/2026/",5,
    "GRC on quantum nanophotonics, plasmonics and 2D photonics — highly relevant to AG Schuck",
-   "upcoming","new entry; application deadline Jun 21",
+   "upcoming","no change; application deadline Jun 21 (GRS oral abstract was Apr 12)",
    "https://www.grc.org/plasmonics-and-nanophotonics-conference/2026/"),
 
 ev("cewqo-2026",
@@ -685,18 +725,19 @@ ev("cewqo-2026",
    "TBA","n/a","TBA","n/a",
    "https://www.lightmatter.fau.de/2026/04/cewqo30-the-30th-central-european-workshop-on-quantum-optics-2026/",5,
    "European quantum optics workshop co-hosted by FAU/MPL Erlangen — close to Münster",
-   "upcoming","new entry; Jul 20-24 Erlangen, hosted by Chekhova/Marquardt groups",
+   "upcoming","no change",
    "https://www.lightmatter.fau.de/2026/04/cewqo30-the-30th-central-european-workshop-on-quantum-optics-2026/; https://www.oqt.nat.fau.de/events/"),
 
 ev("apc-2026",
    "Optica Advanced Photonics Congress 2026","APC 2026","Conference",
-   "integrated quantum photonics;nonlinear optics;nanophotonics",
-   "2026-07-26","2026-07-30","TBA",
-   "TBA","TBA","TBA","TBA",
+   "integrated quantum photonics;nonlinear optics;nanophotonics;photonic integrated circuits",
+   "2026-07-26","2026-07-30","Long Beach, CA, USA",
+   "2026-06-12","TBA","TBA","TBA",
    "https://www.optica.org/events/congress/advanced_photonics_congress/",4,
-   "Optica congress including nonlinear photonics, waveguides and integrated circuits",
-   "upcoming","no change; location TBA",
-   "https://www.optica.org/events/congress/advanced_photonics_congress/"),
+   "Optica congress including IPR (integrated photonics research), nonlinear photonics, and quantum PICs",
+   "cfp_open",
+   "location confirmed: Hilton Long Beach CA; CFP deadline Jun 12 (open); includes IPR 2026 sub-conference",
+   "https://www.optica.org/events/congress/advanced_photonics_congress/; https://www.optica.org/events/congress/advanced_photonics_congress/program/integrated_photonics_research_silicon_and_nanophot/"),
 
 ev("grc-mech-quant-2026",
    "Gordon Research Conference — Mechanical Systems in the Quantum Regime 2026",
@@ -706,20 +747,20 @@ ev("grc-mech-quant-2026",
    "TBA","n/a","TBA","n/a",
    "https://www.grc.org/mechanical-systems-in-the-quantum-regime-conference/2026/",4,
    "Optomechanics GRC — relevant to cavity-optomechanical quantum transducers",
-   "upcoming","new entry; Jul 26-31 Lucca Italy",
+   "upcoming","no change",
    "https://www.grc.org/mechanical-systems-in-the-quantum-regime-conference/2026/"),
 
 ev("lake-como-ufqp-2026",
    "New Frontiers in Ultrafast Quantum Optics — Lake Como School",
    "UFQP 2026","Summer School",
    "quantum optics;nonlinear optics;single-photon sources",
-   "2026-07-27","2026-07-31","Como, Italy",
+   "2026-07-27","2026-07-31","Villa del Grumello, Lake Como, Italy",
    "2026-05-31","n/a","TBA","n/a",
    "https://ufqp.lakecomoschool.org/",4,
    "Summer school on ultrafast quantum optics — photon correlations and time-frequency entanglement",
    "upcoming",
-   "new entry; APPLICATION DEADLINE 2026-05-31 (imminent!); max 40 participants",
-   "https://ufqp.lakecomoschool.org/; https://www.quantiki.org/conference/summer-school-new-frontiers-ultrafast-quantum-optics"),
+   "URGENT: APPLICATION DEADLINE 2026-05-31 in 14 days (RED); max 40 participants; speakers from ICFO, MPL, Politecnico",
+   "https://ufqp.lakecomoschool.org/; https://ufqp.lakecomoschool.org/application/"),
 
 ev("ieee-rapid-2026",
    "IEEE Research and Applications of Photonics in Defense 2026",
@@ -746,21 +787,23 @@ ev("qcrypt-2026",
    "QCrypt 2026","QCrypt 2026","Conference",
    "quantum communication;QKD;quantum networking",
    "2026-08-24","2026-08-28","Ottawa, Canada",
-   "TBA","TBA","TBA","TBA",
+   "2026-03-13","TBA","TBA","TBA",
    "https://qcrypt.net/2026/",4,
    "Premier annual QKD and quantum cryptography conference",
-   "upcoming","confirmed Aug 24-28 Ottawa (Learning Crossroads CRX)",
-   "https://qcrypt.net/2026/"),
+   "cfp_closed",
+   "talk submission closed Mar 13; poster submission closed May 1; registration details TBA",
+   "https://qcrypt.net/2026/; https://qcrypt.net/2026/technical/call/"),
 
 ev("eosam-2026",
    "European Optical Society Annual Meeting 2026","EOSAM 2026","Conference",
    "integrated quantum photonics;nanophotonics;nonlinear optics",
    "2026-08-24","2026-08-28","Tampere, Finland",
-   "TBA","TBA","TBA","TBA",
+   "2026-04-28","TBA","TBA","2026-06-15",
    "https://www.europeanoptics.org/events/eos/eosam2026.html",4,
    "EOS flagship European photonics meeting with strong quantum photonics programme",
-   "upcoming","no change",
-   "https://www.europeanoptics.org/events/eos/eosam2026.html"),
+   "cfp_closed",
+   "abstract deadline was Apr 28 extended (now closed); early-bird registration open until Jun 15 (AMBER)",
+   "https://www.europeanoptics.org/events/eos/eosam2026.html; https://www.europeanoptics.org/pages/events/eosam-2026/registration/"),
 
 ev("tqc-2026",
    "Theory of Quantum Computation, Communication and Cryptography 2026",
@@ -770,18 +813,19 @@ ev("tqc-2026",
    "TBA","TBA","TBA","TBA",
    "https://tqc-conference.org/2026/",3,
    "Theory conference for quantum communication, computation and cryptography",
-   "upcoming","new entry",
+   "upcoming","no change",
    "https://tqc-conference.org/2026/"),
 
 ev("asc-2026",
    "Applied Superconductivity Conference 2026","ASC 2026","Conference",
    "SNSPDs;cryogenic electronics;single-photon sources",
    "2026-09-06","2026-09-11","Pittsburgh, PA, USA",
-   "TBA","TBA","TBA","TBA",
+   "2026-02-02","TBA","TBA","TBA",
    "https://appliedsuperconductivity.org/asc2026/",4,
    "Premier superconductivity conference with major SNSPD and cryogenic electronics sessions",
-   "upcoming","no change",
-   "https://appliedsuperconductivity.org/asc2026/"),
+   "cfp_closed",
+   "abstract deadline closed 2026-02-02 (extended, now firm); minor revisions accepted until Aug 3",
+   "https://appliedsuperconductivity.org/asc2026/; https://www.appliedsuperconductivity.org/asc2026/important-dates/"),
 
 ev("inphomir-school-2026",
    "INPHOMIR Photonics School 2026","INPHOMIR School","Summer School",
@@ -797,11 +841,24 @@ ev("ieee-qce26",
    "IEEE Quantum Week 2026","QCE26","Conference",
    "quantum computing hardware;quantum communication;integrated quantum photonics",
    "2026-09-13","2026-09-18","Toronto, ON, Canada",
-   "TBA","TBA","TBA","TBA",
+   "2026-04-27","2026-06-29","TBA","TBA",
    "https://qce.quantum.ieee.org/2026/",3,
    "IEEE quantum week with photonic quantum computing and QKD sessions",
-   "upcoming","new entry; Sep 13-18 Toronto",
-   "https://qce.quantum.ieee.org/2026/"),
+   "cfp_open",
+   "tech paper deadline closed Apr 27; poster (2-page) deadline Jun 1 (AMBER); workshop paper Jun 22-29",
+   "https://qce.quantum.ieee.org/2026/; https://qce.quantum.ieee.org/2026/submission-deadlines/"),
+
+ev("psc-2026",
+   "International Conference on Photonics in Switching and Computing 2026",
+   "PSC 2026","Conference",
+   "photonic integrated circuits;silicon photonics",
+   "2026-09-15","2026-09-18","Valencia, Spain",
+   "TBA","TBA","TBA","TBA",
+   "https://psc2026.org/",3,
+   "Photonic switching and computing conference (IEEE Photonics Society)",
+   "upcoming",
+   "dates and location confirmed: Sep 15-18 Valencia; updated from TBA placeholder",
+   "https://psc2026.org/"),
 
 ev("ecoc-2026",
    "European Conference on Optical Communication 2026","ECOC 2026","Conference",
@@ -811,8 +868,19 @@ ev("ecoc-2026",
    "https://ecoc2026.org/",4,
    "Europe's flagship optical comms conference with quantum technologies track",
    "cfp_closed",
-   "paper submission deadline was 2026-04-22 (now closed); confirmed Sep 20-24 Málaga",
-   "https://ecoc2026.org/; https://ecoc2026.org/ECOC2026/paper-submission"),
+   "no change; paper deadline closed Apr 22; registration open (no public closing date yet)",
+   "https://ecoc2026.org/; https://ecoc2026.org/ECOC2026/registration"),
+
+ev("europhoton-2026",
+   "12th EPS-QEOD Europhoton Conference 2026","Europhoton 2026","Conference",
+   "nonlinear optics;integrated quantum photonics;silicon photonics;quantum optics",
+   "2026-09-20","2026-09-25","Arcachon, France",
+   "TBA","TBA","TBA","TBA",
+   "https://www.europhoton.org/",4,
+   "EPS European photon-source conference covering solid-state, fibre and waveguide coherent light sources",
+   "upcoming",
+   "new entry; Sep 20-25 Arcachon; organised by EPS-QEOD; biennial European laser/photonics flagship",
+   "https://www.europhoton.org/"),
 
 ev("mne-2026",
    "International Conference on Micro and Nano Engineering 2026","MNE 2026",
@@ -827,12 +895,13 @@ ev("mne-2026",
 ev("fio-2026",
    "Frontiers in Optics + Laser Science 2026","FiO+LS 2026","Conference",
    "quantum optics;nonlinear optics;nanophotonics",
-   "2026-09-27","2026-09-30","Rochester, NY, USA",
-   "TBA","TBA","TBA","TBA",
-   "https://frontiersinoptics.com/",3,
+   "2026-09-27","2026-10-01","Rochester, NY, USA",
+   "2026-06-02","TBA","TBA","TBA",
+   "https://www.frontiersinoptics.com/",3,
    "Broad US photonics conference with quantum optics tracks",
-   "upcoming","no change",
-   "https://frontiersinoptics.com/"),
+   "cfp_open",
+   "paper deadline Jun 2, 2026 (CFP open); Rochester Riverside Convention Center",
+   "https://www.frontiersinoptics.com/"),
 
 ev("hdqs-2026",
    "High-Dimensional Quantum Systems Workshop 2026","HDQS 2026","Workshop",
@@ -871,8 +940,8 @@ ev("eqtc-2026",
    "TBA","TBA","TBA","TBA",
    "https://qt.eu/events/eqtc-2026-european-quantum-technologies-conference",5,
    "EU Quantum Flagship conference — all aspects of quantum technology, high visibility",
-   "upcoming","confirmed Nov 29–Dec 3 Dublin",
-   "https://qt.eu/events/eqtc-2026-european-quantum-technologies-conference"),
+   "upcoming","no change; abstract/registration deadlines not yet announced",
+   "https://qt.eu/events/eqtc-2026-european-quantum-technologies-conference; https://www.eqtc.eu/"),
 
 # ════════════════════════════════════════════════════════════════════════
 #  UPCOMING — 2027
@@ -884,7 +953,7 @@ ev("photonics-west-2027",
    "2026-07-22","TBA","TBA","TBA",
    "https://spie.org/conferences-and-exhibitions/photonics-west",5,
    "SPIE flagship with Quantum West and Si-photonics tracks — abstract deadline Jul 22 2026",
-   "upcoming","new entry; Jan 30–Feb 4 2027; abstract deadline 2026-07-22",
+   "upcoming","no change; abstract deadline Jul 22 2026 confirmed",
    "https://spie.org/conferences-and-exhibitions/photonics-west; https://spie.org/conferences-and-exhibitions/photonics-west/program/browse-program"),
 
 ev("qip-2027",
@@ -894,7 +963,7 @@ ev("qip-2027",
    "TBA","TBA","TBA","TBA",
    "https://qipconference.org/2027/",4,
    "Premier annual quantum information conference; quantum networking and hardware sessions",
-   "upcoming","new entry; Feb 20-26 Singapore (CQT)",
+   "upcoming","no change",
    "https://qipconference.org/2027/; https://qip.iaqi.org/nextqip"),
 
 ev("dpg-samop-2027",
@@ -914,7 +983,7 @@ ev("ofc-2027",
    "TBA","TBA","TBA","TBA",
    "https://ofcconference.org/",4,
    "World's largest optical comms conference with PIC and quantum networking sessions",
-   "upcoming","new entry; Mar 7-11 2027 Los Angeles",
+   "upcoming","no change",
    "https://ofcconference.org/"),
 
 ev("spie-oo-2027",
@@ -932,7 +1001,7 @@ ev("aps-summit-2027",
    "TBA","TBA","TBA","TBA",
    "https://www.aps.org/events/2027/summit",4,
    "Joint APS March+April meeting; major quantum photonics and computing sessions",
-   "upcoming","new entry; Apr 11-16 Atlanta",
+   "upcoming","no change",
    "https://www.aps.org/events/2027/summit"),
 
 ev("cleo-europe-2027",
@@ -942,7 +1011,7 @@ ev("cleo-europe-2027",
    "TBA","TBA","TBA","TBA",
    "https://cleoeurope.org/",5,
    "Flagship European photonics and quantum optics biennial conference",
-   "upcoming","corrected end date to Jun 25; part of World of Photonics Congress 2027",
+   "upcoming","no change; part of World of Photonics Congress 2027",
    "https://cleoeurope.org/; https://www.photonics-congress.com/en/about/conferences/cleo-eqec/"),
 
 ev("ieee-rapid-2027",
@@ -969,15 +1038,6 @@ ev("ipc-2027",
 # ════════════════════════════════════════════════════════════════════════
 #  PLACEHOLDERS — dates TBA
 # ════════════════════════════════════════════════════════════════════════
-ev("photonics-switching-2026",
-   "Photonics in Switching and Computing 2026","PiS 2026","Conference",
-   "photonic integrated circuits;silicon photonics",
-   "TBA","TBA","TBA",
-   "TBA","TBA","TBA","TBA","TBA",3,
-   "Photonic switching and routing conference",
-   "upcoming","no change; dates TBA (expected summer 2026)",
-   "original list"),
-
 ev("it-fab-school-2026",
    "It-fab Italian Network for Micro and Nano Fabrication School 2026",
    "It-fab School 2026","Summer School",
@@ -997,23 +1057,15 @@ ev("opic",
    "upcoming","placeholder; next edition dates TBA",
    "original list"),
 
-ev("owtnm",
-   "Optical Wave & Waveguide Theory and Modelling Workshop","OWTNM",
-   "Workshop","photonic integrated circuits;nanophotonics",
-   "TBA","TBA","TBA",
-   "TBA","n/a","TBA","n/a","TBA",3,
-   "Waveguide modelling workshop relevant to PIC simulation",
-   "upcoming","placeholder; next edition dates TBA",
-   "original list"),
-
 ev("opon-2025",
-   "OPON 2025 Münster","OPON 2025","Conference",
+   "OPON 2025 Münster (Optical Properties of Nanostructures)","OPON 2025","Conference",
    "integrated quantum photonics;nanophotonics",
    "TBA","TBA","Münster, Germany",
    "TBA","TBA","TBA","TBA","TBA",4,
    "Local Münster photonics conference — direct access, no travel",
-   "upcoming","no change; dates TBA",
-   "original list"),
+   "upcoming",
+   "no 2026 edition announced yet; runs on irregular/biennial cadence; last edition Feb 2025",
+   "https://www.uni-muenster.de/Physik.FT/en/opon2025/index.html"),
 
 ev("nrw-nano-2026",
    "NRW NanoConference 2026","NRW Nano 2026","Conference",
@@ -1033,12 +1085,21 @@ ev("icqe",
    "upcoming","placeholder; next edition TBA",
    "original list"),
 
+ev("ecio-2027",
+   "European Conference on Integrated Optics 2027","ECIO 2027","Conference",
+   "integrated quantum photonics;photonic integrated circuits;silicon photonics;nanophotonics",
+   "TBA","TBA","TBA",
+   "TBA","TBA","TBA","TBA","TBA",5,
+   "Next edition of Europe's largest integrated optics conference (biennial after 2026 Zürich)",
+   "upcoming",
+   "new entry; placeholder — 2027 host not yet announced; series rotates annually",
+   "https://ecio-conference.org/"),
+
 ]  # end EVENTS
 
 
 # ── helpers ───────────────────────────────────────────────────────────────────
 def parse_date(s):
-    """Return date object or None for TBA/n/a."""
     if not s or s in ("TBA", "n/a"):
         return None
     try:
@@ -1058,7 +1119,6 @@ RED   = PatternFill(fill_type="solid", fgColor="FF4444")
 AMBER = PatternFill(fill_type="solid", fgColor="FFAA00")
 
 def deadline_fill(s):
-    """Return RED/AMBER fill or None based on days until deadline."""
     n = days_from_today(s)
     if n is None:
         return None
@@ -1081,21 +1141,21 @@ def write_tsv(events, path):
 
 
 # ── write XLSX ────────────────────────────────────────────────────────────────
-HEADER_FILL  = PatternFill(fill_type="solid", fgColor="1F4E79")
-HEADER_FONT  = Font(bold=True, color="FFFFFF", size=10)
+HEADER_FILL   = PatternFill(fill_type="solid", fgColor="1F4E79")
+HEADER_FONT   = Font(bold=True, color="FFFFFF", size=10)
 ARCHIVED_FILL = PatternFill(fill_type="solid", fgColor="E8E8E8")
-SCORE_COLORS = {5:"D4EDDA", 4:"D1ECF1", 3:"FFF3CD", 2:"F8D7DA", 1:"F5C6CB"}
+ONGOING_FILL  = PatternFill(fill_type="solid", fgColor="C6EFCE")
+SCORE_COLORS  = {5:"D4EDDA", 4:"D1ECF1", 3:"FFF3CD", 2:"F8D7DA", 1:"F5C6CB"}
 
 def write_xlsx(events, path):
     wb = Workbook()
     ws = wb.active
     ws.title = "Conferences"
 
-    # header
     ws.append(COLS)
     for cell in ws[1]:
-        cell.fill   = HEADER_FILL
-        cell.font   = HEADER_FONT
+        cell.fill      = HEADER_FILL
+        cell.font      = HEADER_FONT
         cell.alignment = Alignment(horizontal="center", vertical="center",
                                    wrap_text=True)
 
@@ -1105,32 +1165,33 @@ def write_xlsx(events, path):
 
     col_idx = {c: i+1 for i, c in enumerate(COLS)}
 
-    for ev in events:
-        row_vals = [ev[c] for c in COLS]
+    for event in events:
+        row_vals = [event[c] for c in COLS]
         ws.append(row_vals)
         row_num = ws.max_row
 
-        # light-grey background for archived rows
-        is_archived = ev["status"] == "archived"
-        if is_archived:
+        status = event.get("status", "")
+        if status == "archived":
             for cell in ws[row_num]:
                 cell.fill = ARCHIVED_FILL
+        elif status == "ongoing":
+            for cell in ws[row_num]:
+                cell.fill = ONGOING_FILL
 
-        # relevance score colour on that cell
-        score_cell = ws.cell(row=row_num, column=col_idx["relevance_score"])
-        sc = ev.get("relevance_score")
+        # relevance score cell colour
+        sc = event.get("relevance_score")
         if sc and str(sc).isdigit() and int(sc) in SCORE_COLORS:
-            score_cell.fill = PatternFill(fill_type="solid",
-                                          fgColor=SCORE_COLORS[int(sc)])
+            ws.cell(row=row_num,
+                    column=col_idx["relevance_score"]).fill = PatternFill(
+                        fill_type="solid", fgColor=SCORE_COLORS[int(sc)])
 
-        # deadline columns — conditional colour
+        # deadline conditional colouring
         for dcol in DEADLINE_COLS:
-            val = ev.get(dcol, "")
+            val = event.get(dcol, "")
             fill = deadline_fill(str(val))
             if fill:
                 ws.cell(row=row_num, column=col_idx[dcol]).fill = fill
 
-    # auto-size columns (capped)
     CAP = {
         "id": 28, "name": 55, "acronym": 18, "type": 16, "topic_tags": 55,
         "start_date": 13, "end_date": 13, "location": 28,
@@ -1140,10 +1201,8 @@ def write_xlsx(events, path):
         "status": 14, "last_verified": 14, "last_change": 50, "source_urls": 60,
     }
     for col_name, cap_w in CAP.items():
-        ci = col_idx[col_name]
-        ws.column_dimensions[get_column_letter(ci)].width = cap_w
+        ws.column_dimensions[get_column_letter(col_idx[col_name])].width = cap_w
 
-    # wrap text in long columns
     for row in ws.iter_rows(min_row=2):
         for cell in row:
             cell.alignment = Alignment(wrap_text=False, vertical="top")
@@ -1161,7 +1220,6 @@ if __name__ == "__main__":
     write_xlsx(EVENTS, xlsx_path)
     print(f"\nDone. {len(EVENTS)} events written.")
 
-    # summary stats
     from collections import Counter
     stats = Counter(e["status"] for e in EVENTS)
     for s, n in sorted(stats.items()):
