@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Build conferences_2026-09-13.tsv  and  conferences_2026-09-13.xlsx
+Build conferences_2026-09-14.tsv  and  conferences_2026-09-14.xlsx
 for AG Schuck quantum-photonics conference tracker.
 """
 
@@ -10,8 +10,8 @@ from openpyxl import Workbook
 from openpyxl.styles import PatternFill, Font, Alignment, Border, Side, PatternFill
 from openpyxl.utils import get_column_letter
 
-TODAY     = date(2026, 9, 13)
-SNAPSHOT  = "2026-09-13"
+TODAY     = date(2026, 9, 14)
+SNAPSHOT  = "2026-09-14"
 OUTDIR    = "/home/user/conferences"
 
 COLS = [
@@ -781,17 +781,17 @@ ev("qps-2026",
    "TBA","n/a","TBA","n/a",
    "https://phoqs.uni-paderborn.de/en/veranstaltungen/quantum-photonics-spotlight-2026",5,
    "Hosted by Paderborn's Institute for Photonic Quantum Systems (PhoQS); spans the full photonic quantum tech development chain — bullseye for AG Schuck","upcoming",
-   "new entry; end date reported as Oct 1 or Oct 2 in different sources, verify on site",
+   "end date confirmed as Oct 1 (Sep28-Oct1) via official PhoQS page and ID Quantique listing; prior Oct1/Oct2 ambiguity resolved",
    "https://phoqs.uni-paderborn.de/en/veranstaltungen/quantum-photonics-spotlight-2026; https://www.idquantique.com/quantum-photonics-spotlight-2026/"),
 ev("hdqs-2026",
    "High-Dimensional Quantum Systems Workshop 2026","HDQS 2026","Workshop",
    "quantum optics;quantum communication;integrated quantum photonics",
-   "2026-10-04","2026-10-09","Benasque, Spain",
+   "2026-09-20","2026-10-03","Benasque, Spain",
    "TBA","n/a","TBA","n/a",
    "https://benasque.org/2026hdqs/",4,
    "Benasque workshop on high-dimensional quantum photonics and quantum information","upcoming",
-   "dates unverified this run (conflicting search snippets: Oct4-9 vs Oct5-8 vs Sep20-Oct3); kept prior Oct 4-9 pending direct check of benasque.org/2026hdqs/",
-   "https://benasque.org/2026hdqs/"),
+   "dates corrected to Sep20-Oct3 (was Oct4-9); benasque.org itself unreachable from this environment (egress-blocked), corroborated instead via two independent secondary-source searches (quantum.technology conf listing) agreeing on Sep20-Oct3; recommend official confirmation on benasque.org/2026hdqs/ next run",
+   "https://benasque.org/2026hdqs/; https://quantum.technology/conf/index.html"),
 ev("quantum-effects-2026",
    "Quantum Effects 2026","Quantum Effects 2026","Conference",
    "quantum communication;quantum computing hardware",
@@ -918,6 +918,15 @@ ev("spie-oo-2027",
    "SPIE European conference with quantum photonics and nanophotonics tracks","upcoming",
    "location Prague reconfirmed via spie.org (2027-titled page live); abstract deadline not yet published",
    "original list"),
+ev("ieee-qpain-2027",
+   "IEEE 3rd International Conference on Quantum Photonics, AI & Networking","IEEE QPAIN 2027","Conference",
+   "integrated quantum photonics;quantum networking",
+   "2027-04-08","2027-04-10","Chattogram, Bangladesh",
+   "TBA","2026-11-30","TBA","TBA",
+   "https://qpain.org/",3,
+   "Quantum photonics and networking conference (IEEE-sponsored); year roll-over from 2026 edition","upcoming",
+   "new entry; year roll-over from 2026 edition (3rd edition); submission deadline 2026-11-30",
+   "https://qpain.org/; https://qpain.org/call-for-papers"),
 ev("benasque-sqt-2027",
    "Spring School on Superconducting Qubit Technology 2027","Benasque SQT 2027","Summer School",
    "quantum computing hardware;cryogenic electronics",
