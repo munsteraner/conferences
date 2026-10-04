@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Build conferences_2026-09-27.tsv  and  conferences_2026-09-27.xlsx
+Build conferences_2026-10-04.tsv  and  conferences_2026-10-04.xlsx
 for AG Schuck quantum-photonics conference tracker.
 """
 
@@ -10,8 +10,8 @@ from openpyxl import Workbook
 from openpyxl.styles import PatternFill, Font, Alignment, Border, Side, PatternFill
 from openpyxl.utils import get_column_letter
 
-TODAY     = date(2026, 9, 27)
-SNAPSHOT  = "2026-09-27"
+TODAY     = date(2026, 10, 4)
+SNAPSHOT  = "2026-10-04"
 OUTDIR    = "/home/user/conferences"
 
 COLS = [
@@ -771,8 +771,8 @@ ev('fio-2026',
    '2026-09-27','2026-10-01','Rochester, NY, USA',
    'TBA','TBA','2026-09-25','2026-08-14',
    'https://frontiersinoptics.com/',3,
-   'Broad US photonics conference with quantum optics tracks','ongoing',
-   'status corrected: event is currently in progress',
+   'Broad US photonics conference with quantum optics tracks','archived',
+   'event ended 2026-10-01 -> archived',
    'https://www.frontiersinoptics.com/; https://www.frontiersinoptics.com/registration'),
 ev('qps-2026',
    'Quantum Photonics Spotlight 2026','QPS2026','Conference',
@@ -780,8 +780,8 @@ ev('qps-2026',
    '2026-09-28','2026-10-02','Paderborn, Germany',
    'TBA','n/a','TBA','n/a',
    'https://phoqs.uni-paderborn.de/en/veranstaltungen/quantum-photonics-spotlight-2026',5,
-   "Hosted by Paderborn's Institute for Photonic Quantum Systems (PhoQS); spans the full photonic quantum tech development chain — bullseye for AG Schuck",'upcoming',
-   'end date corrected 2026-10-01 -> 2026-10-02 (PhoQS Paderborn official page + 2 secondary sources agree on Sep 28-Oct 2)',
+   "Hosted by Paderborn's Institute for Photonic Quantum Systems (PhoQS); spans the full photonic quantum tech development chain — bullseye for AG Schuck",'archived',
+   'event ended 2026-10-02 -> archived; watch for QPS 2027',
    'https://phoqs.uni-paderborn.de/en/veranstaltungen/quantum-photonics-spotlight-2026; https://www.idquantique.com/quantum-photonics-spotlight-2026/;https://www.idquantique.com/quantum-photonics-spotlight-2026/'),
 ev('quantum-effects-2026',
    'Quantum Effects 2026','Quantum Effects 2026','Conference',
@@ -832,10 +832,10 @@ ev('ipc-2026',
    'IEEE Photonics Conference 2026','IPC 2026','Conference',
    'integrated quantum photonics;photonic integrated circuits;silicon photonics',
    '2026-11-08','2026-11-12','Denver, CO, USA',
-   '2026-05-04','2026-05-04','TBA','TBA',
+   '2026-05-04','2026-05-04','TBA','2026-10-08',
    'https://ieee-ipc.org/',4,
    'IEEE flagship photonics devices and integrated systems conference','upcoming',
-   'reverified against official/secondary sources — no change',
+   'registration open; early-bird deadline 2026-10-08 added (official site unreachable via proxy; from secondary search results)',
    'https://ieee-ipc.org/; https://ieee-ipc.org/attendees/registration/; https://ieeephotonics.org/event/2026-ieee-photonics-conference-ipc/'),
 ev('eqtc-2026',
    'European Quantum Technologies Conference 2026','EQTC 2026','Conference',
