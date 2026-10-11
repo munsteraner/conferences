@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Build conferences_2026-10-04.tsv  and  conferences_2026-10-04.xlsx
+Build conferences_2026-10-11.tsv  and  conferences_2026-10-11.xlsx
 for AG Schuck quantum-photonics conference tracker.
 """
 
@@ -10,8 +10,8 @@ from openpyxl import Workbook
 from openpyxl.styles import PatternFill, Font, Alignment, Border, Side, PatternFill
 from openpyxl.utils import get_column_letter
 
-TODAY     = date(2026, 10, 4)
-SNAPSHOT  = "2026-10-04"
+TODAY     = date(2026, 10, 11)
+SNAPSHOT  = "2026-10-11"
 OUTDIR    = "/home/user/conferences"
 
 COLS = [
@@ -789,8 +789,8 @@ ev('quantum-effects-2026',
    '2026-10-06','2026-10-07','Stuttgart, Germany',
    'TBA','n/a','TBA','n/a',
    'https://www.messe-stuttgart.de/quantum-effects/en/',3,
-   "Germany's leading application-oriented quantum tech conference/trade fair; covers quantum communication pillar",'upcoming',
-   'reverified against official/secondary sources — no change',
+   "Germany's leading application-oriented quantum tech conference/trade fair; covers quantum communication pillar",'archived',
+   'event has passed (2026-10-07) — archived',
    'https://www.messe-stuttgart.de/quantum-effects/en/; https://www.squad-germany.de/en/quantum-effects-2026-2/'),
 ev('photonics-days-2026',
    'Photonics Days Berlin 2026','PDB 2026','Conference',
@@ -798,8 +798,8 @@ ev('photonics-days-2026',
    '2026-10-07','2026-10-08','Berlin, Germany',
    'TBA','TBA','TBA','TBA',
    'https://photonic-days-berlin.com/',3,
-   'German photonics industry and research meeting','upcoming',
-   'reverified against official/secondary sources — no change',
+   'German photonics industry and research meeting','archived',
+   'event has passed (2026-10-08) — archived',
    'https://photonic-days-berlin.com/'),
 ev('epic-manufacturing-2026',
    'EPIC Workshop on Efficient Manufacturing — Photonics made in Europe','EPIC EM 2026','Workshop',
@@ -868,10 +868,10 @@ ev('qip-2027',
    '30th Quantum Information Processing Conference','QIP 2027','Conference',
    'quantum communication;quantum computing hardware;quantum networking',
    '2027-02-20','2027-02-26','Singapore',
-   '2026-09-28','2026-10-05','TBA','TBA',
+   '2026-09-28','2026-10-05','2027-01-20','2026-12-20',
    'https://qipconference.org/2027/',4,
-   'Premier annual quantum information conference; quantum networking and hardware sessions','upcoming',
-   'reverified against official/secondary sources — no change',
+   'Premier annual quantum information conference; quantum networking and hardware sessions','cfp_open',
+   'talk deadlines passed; poster submission open until 2026-12-04; early bird 2026-12-20; registration closes 2027-01-20 (all AoE)',
    'https://qipconference.org/2027/; https://qipconference.org/2027/call/; https://www.cqt.sg/upcoming-events/'),
 ev('dpg-samop-2027',
    'DPG Frühjahrstagung SAMOP 2027','DPG SAMOP 2027','Conference',
