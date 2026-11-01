@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Build conferences_2026-10-18.tsv  and  conferences_2026-10-18.xlsx
+Build conferences_2026-11-01.tsv  and  conferences_2026-11-01.xlsx
 for AG Schuck quantum-photonics conference tracker.
 """
 
@@ -10,8 +10,8 @@ from openpyxl import Workbook
 from openpyxl.styles import PatternFill, Font, Alignment, Border, Side, PatternFill
 from openpyxl.utils import get_column_letter
 
-TODAY     = date(2026, 10, 18)
-SNAPSHOT  = "2026-10-18"
+TODAY     = date(2026, 11, 1)
+SNAPSHOT  = "2026-11-01"
 OUTDIR    = "/home/user/conferences"
 
 COLS = [
@@ -28,7 +28,7 @@ DEADLINE_COLS = ["abstract_deadline", "paper_deadline",
 # ── Event data ────────────────────────────────────────────────────────────────
 # Incremental build: start from the previous snapshot's TSV, then apply this
 # run's UPDATES (field changes on existing ids) and NEW rows.
-PREV_SNAPSHOT = "2026-10-11"
+PREV_SNAPSHOT = "2026-10-18"
 
 def load_prev():
     with open(os.path.join(OUTDIR, f"conferences_{PREV_SNAPSHOT}.tsv"),
@@ -36,37 +36,25 @@ def load_prev():
         return list(csv.DictReader(f, delimiter="\t"))
 
 UPDATES = {
-    "epic-manufacturing-2026": dict(status="archived",
-        last_change="event ended 2026-10-14 -> archived", src=None),
-    "ofc-2027": dict(abstract_deadline="2026-10-20", status="cfp_open",
-        last_change="abstract/summary deadline 2026-10-20 12:00 EDT; postdeadline 2027-02-23; demo zone 2026-11-17 (dates/venue reconfirmed; official site unreachable via proxy, from search snippet of ofcconference.org)",
-        src="https://www.ofcconference.org/submit-a-paper/"),
-    "dpg-samop-2027": dict(abstract_deadline="2026-12-01", registration_deadline="2027-02-24",
-        early_bird_deadline="2027-01-27", status="cfp_open",
-        last_change="abstract submission open (deadline 2026-12-01 23:59 CET); registration opened 2026-10-15, early bird 2027-01-27, regular 2027-02-24 (official site unreachable via proxy; from search snippet)",
-        src="https://hannover27.dpg-tagungen.de/deadlines"),
+    "it-fab-school-2026": dict(status="archived",
+        last_change="event ended 2026-10-30 -> archived", src=None),
+    "ofc-2027": dict(status="cfp_closed",
+        last_change="abstract deadline 2026-10-20 passed -> cfp_closed (post-deadline 2027-02-23 still possible)", src=None),
+    "aps-summit-2027": dict(status="cfp_closed",
+        last_change="abstract deadline 2026-10-22 passed -> cfp_closed", src=None),
+    "spw-2027": dict(start_date="TBA", end_date="TBA",
+        last_change="dates reset to TBA: SPW appears biennial (2024 Edinburgh, 2026 Naples), so earlier 2027-11 dates look unverified; next edition probably 2028 - verify on official site",
+        src="https://www.fbk.eu/en/event/37290/single-photon-workshop-2026"),
     "cleo-2027": dict(
-        last_change="aggregator hints paper-summary deadline ~2026-12-08 (tentative, unverified, not entered); official page not yet confirmed",
-        src=None),
-    "ipc-2026": dict(
-        last_change="early-bird deadline (2026-10-08) has passed; regular registration until event",
-        src=None),
+        last_change="listings (cantonfair.net, laserfocusworld.com) give Long Beach 2027-05-02..07; unverified third-party hint of submission deadline ~2026-11-23 (not entered; official cleoconference.org not confirmed)",
+        src="https://www.laserfocusworld.com/events/event/55361294/optica-cleo-2027"),
+    "qps-2027": dict(
+        last_change="placeholder; no 2027 announcement found (searched 2026-11-01)", src=None),
+    "ecio-2027": dict(
+        last_change="placeholder; no 2027 announcement found (searched 2026-11-01); ECIO 2026 was Zurich Jun 15-17", src=None),
 }
 
-NEW = [
-    dict(id="qps-2027", name="Quantum Photonics Spotlight 2027", acronym="QPS2027",
-         type="Conference",
-         topic_tags="integrated quantum photonics;single-photon sources;quantum communication",
-         start_date="TBA", end_date="TBA", location="Paderborn, Germany",
-         abstract_deadline="TBA", paper_deadline="n/a", registration_deadline="TBA",
-         early_bird_deadline="n/a",
-         website="https://phoqs.uni-paderborn.de/en/veranstaltungen",
-         relevance_score="5",
-         relevance_note="Next edition of Paderborn PhoQS photonic quantum tech conference (QPS2026 ran 2026-09-28..10-02) - bullseye for AG Schuck",
-         status="upcoming",
-         last_change="new entry; placeholder - no 2027 announcement found yet (searched 2026-10-18)",
-         source_urls="https://www.uni-paderborn.de/en/event-item/internationale-fachkonferenz-quantum-photonics-spotlight-geht-in-die-zweite-runde"),
-]
+NEW = []
 
 def build_events():
     rows = load_prev()
