@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Build conferences_2026-11-01.tsv  and  conferences_2026-11-01.xlsx
+Build conferences_2026-11-08.tsv  and  conferences_2026-11-08.xlsx
 for AG Schuck quantum-photonics conference tracker.
 """
 
@@ -10,8 +10,8 @@ from openpyxl import Workbook
 from openpyxl.styles import PatternFill, Font, Alignment, Border, Side, PatternFill
 from openpyxl.utils import get_column_letter
 
-TODAY     = date(2026, 11, 1)
-SNAPSHOT  = "2026-11-01"
+TODAY     = date(2026, 11, 8)
+SNAPSHOT  = "2026-11-08"
 OUTDIR    = "/home/user/conferences"
 
 COLS = [
@@ -28,7 +28,7 @@ DEADLINE_COLS = ["abstract_deadline", "paper_deadline",
 # ── Event data ────────────────────────────────────────────────────────────────
 # Incremental build: start from the previous snapshot's TSV, then apply this
 # run's UPDATES (field changes on existing ids) and NEW rows.
-PREV_SNAPSHOT = "2026-10-18"
+PREV_SNAPSHOT = "2026-11-01"
 
 def load_prev():
     with open(os.path.join(OUTDIR, f"conferences_{PREV_SNAPSHOT}.tsv"),
@@ -36,22 +36,20 @@ def load_prev():
         return list(csv.DictReader(f, delimiter="\t"))
 
 UPDATES = {
-    "it-fab-school-2026": dict(status="archived",
-        last_change="event ended 2026-10-30 -> archived", src=None),
-    "ofc-2027": dict(status="cfp_closed",
-        last_change="abstract deadline 2026-10-20 passed -> cfp_closed (post-deadline 2027-02-23 still possible)", src=None),
-    "aps-summit-2027": dict(status="cfp_closed",
-        last_change="abstract deadline 2026-10-22 passed -> cfp_closed", src=None),
-    "spw-2027": dict(start_date="TBA", end_date="TBA",
-        last_change="dates reset to TBA: SPW appears biennial (2024 Edinburgh, 2026 Naples), so earlier 2027-11 dates look unverified; next edition probably 2028 - verify on official site",
-        src="https://www.fbk.eu/en/event/37290/single-photon-workshop-2026"),
+    "pic-summit-europe-2026": dict(status="archived",
+        last_change="event ended 2026-11-04 -> archived; watch for PIC Summit Europe 2027", src=None),
+    "ipc-2026": dict(status="ongoing",
+        last_change="event starts 2026-11-08 -> ongoing", src=None),
     "cleo-2027": dict(
-        last_change="listings (cantonfair.net, laserfocusworld.com) give Long Beach 2027-05-02..07; unverified third-party hint of submission deadline ~2026-11-23 (not entered; official cleoconference.org not confirmed)",
-        src="https://www.laserfocusworld.com/events/event/55361294/optica-cleo-2027"),
-    "qps-2027": dict(
-        last_change="placeholder; no 2027 announcement found (searched 2026-11-01)", src=None),
+        last_change="re-searched 2026-11-08: aggregators still give Long Beach 2027-05-02..07 and unverified submission deadline 2026-11-23 (not entered; official cleoconference.org not confirmed) - check official CFP page before 2026-11-23",
+        src="https://www.optica.org/events/global_calendar/events/2027/conference_on_lasers_and_electro-optics_(1)"),
+    "qcmc-2027": dict(
+        last_change="re-searched 2026-11-08: dates/location still TBA (previous edition QCMC 2024 Chennai, Aug 26-30; organizer likely CQuICC IIT Madras for 2024); no official 2027 site found",
+        src="https://quantum.technology/conf/2027.html"),
     "ecio-2027": dict(
-        last_change="placeholder; no 2027 announcement found (searched 2026-11-01); ECIO 2026 was Zurich Jun 15-17", src=None),
+        last_change="placeholder; no 2027 announcement found (searched 2026-11-08)", src=None),
+    "spw-2027": dict(
+        last_change="still TBA (searched 2026-11-08): SPW is biennial (2024 Edinburgh, 2026 Naples); no 2027/2028 announcement found - likely 2028, verify on official site", src=None),
 }
 
 NEW = []
