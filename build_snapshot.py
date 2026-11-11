@@ -66,7 +66,13 @@ def load_tsv(path):
 
 def apply_changes(rows, changes, snapshot):
     byid = {r["id"]: r for r in rows}
+    # id corrections (e.g. placeholder had the wrong edition year); row kept
+    for old, new_id in changes.get("renames", {}).items():
+        if old in byid and new_id not in byid:
+            byid[new_id] = byid.pop(old)
+            byid[new_id]["id"] = new_id
     for u in changes.get("updates", []):
+        u = dict(u, id=changes.get("renames", {}).get(u["id"], u["id"]))
         r = byid.get(u["id"])
         if r is None:
             print(f"WARN: update for unknown id {u['id']}", file=sys.stderr)

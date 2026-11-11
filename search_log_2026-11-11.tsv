@@ -1,0 +1,494 @@
+kind	target	status	hits_in_scope	new_rows_added	note
+gap	gap_table	ok	0	0	[gap] Counts of 60 upcoming active rows (ongoing ipc-2026 excluded); a row counts in every topic it touches. Region DE / EU (rest of Europe) / World / ? (TBA location). School = Summer+Winter. Empty columns before audit: all Workshop-DE, all School-DE, all Symposium/Seminar; thin: T5 workshops/schools (0), T2 DE (1), T6 workshops. topic | Conf-DE | Conf-EU | Conf-World | Conf-? | Work-DE | Work-EU | Work-World | Work-? | Scho-DE | Scho-EU | Scho-World | Scho-? | Symp-DE | Symp-EU | Symp-World | Symp-? T1 | 7 | 8 | 10 | 5 | 0 | 1 | 0 | 2 | 0 | 3 | 0 | 0 | 0 | 0 | 0 | 0 T2 | 1 | 2 | 5 | 1 | 0 | 2 | 1 | 0 | 0 | 2 | 0 | 0 | 0 | 0 | 0 | 0 T3 | 3 | 4 | 8 | 3 | 0 | 3 | 1 | 0 | 0 | 3 | 0 | 0 | 0 | 0 | 0 | 0 T4 | 3 | 5 | 7 | 3 | 0 | 2 | 2 | 0 | 0 | 2 | 0 | 0 | 0 | 0 | 0 | 0 T5 | 1 | 4 | 6 | 3 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 T6 | 5 | 4 | 3 | 3 | 0 | 2 | 0 | 2 | 0 | 2 | 0 | 0 | 0 | 0 | 0 | 0 T7 | 2 | 3 | 4 | 6 | 0 | 1 | 0 | 0 | 0 | 3 | 0 | 0 | 0 | 0 | 0 | 0
+gap	World of Quantum 2027 Munich Laser World of Photonics dates	ok	2	2	[gap] WoQ + LWoP 22-25 Jun 2027; WoP Congress 20-25 Jun
+gap	SNSPD workshop 2027 superconducting nanowire single-photon detectors	ok	1	0	[gap] found via WE-Heraeus query instead; SPW 2027 date found
+gap	WE-Heraeus-Seminar 2027 quantum photonics single photons Bad Honnef (+ full WEH 2027 calendar pages)	ok	5	4	[gap] SNSPD seminar, Photonic QI JP-DE seminar, Entanglement, Molecules for QT; ONNA known
+gap	quantum optics winter school 2027 Europe PhD	ok	2	1	[gap] Sheffield known; RPTU cavity week added; QVLS winter school (ion traps) skipped
+gap	EOSAM 2027 European Optical Society Annual Meeting	ok	1	1	[gap] Wroclaw 27-30 Sep 2027
+gap	Central European Workshop on Quantum Optics CEWQO 2027	ok	1	1	[gap] Torun 14-18 Jun 2027 (UMK conference list)
+gap	SPIE Photonics for Quantum 2027	ok	1	1	[gap] dates TBA -> candidate
+gap	Optica Advanced Photonics Congress 2027 / Optica 2027 calendar	ok	3	1	[gap] APC Auckland 18-22 Jul -> ipr-2027 correction; FiO 2027 added
+gap	IEEE Quantum Week QCE 2027	ok	1	1	[gap] Raleigh 10-15 Oct 2027
+gap	Optica Quantum Photonics Incubator 2027	ok	0	0	[gap] no 2027 incubator on quantum photonics listed
+gap	Photonics Days Berlin Brandenburg 2027	ok	1	1	[gap] 6-7 Oct 2027
+gap	Quantum Futur Q-Expo BMBF quantum conference 2027 Germany	ok	1	0	[gap] Quantum Futur is a funding scheme; Erfurt Quantum Photonics already tracked
+gap	optomechanics workshop 2027 cavity optomechanics Europe	ok	3	2	[gap] FNS 2027 Braga, OMN 2027 Stockholm; ONNA known
+gap	2D materials photonics quantum emitters workshop 2027 hBN	ok	3	2	[gap] 2D TMDs 2027, BN Workshop 2027; TRNM XII (theory) skipped
+gap	quantum internet / quantum networks summer school 2027 PhD	ok	4	2	[gap] Quantum NEST, Niels Bohr QSS; QuNeSS & QuNeW known (QuNeW dates update)
+gap	cryogenic electronics quantum computing workshop 2027 cryo-CMOS	ok	3	2	[gap] EUCAS 2027 Heidelberg, ISEC 2027; CEC/ICMC rejected
+gap	EUCAS 2027 Heidelberg	ok	1	0	[gap] verified official site
+gap	NOEKS 2027	ok	1	1	[gap] NOEKS 18 Paderborn 26-30 Sep 2027
+gap	squeezed light workshop 2027 continuous-variable quantum optics	ok	1	0	[gap] no dedicated squeezing workshop 2027; quantum.info 2027 hub surfaced TFLN, BQIT, AQIS
+gap	International Conference on Thin Film Lithium Niobate Integrated Photonics 2027	ok	1	1	[gap] Ascona 5-10 Sep 2027 (ETH news)
+gap	Bristol Quantum Information Technologies Workshop BQIT 2027	ok	1	1	[gap] 26-28 Apr 2027
+gap	International Conference on Integrated Quantum Photonics 2027	ok	1	0	[gap] ICIQP dormant; IEEE PS list gave IPC/SiPhotonics/SUM/QPAIN dates
+gap	photonic quantum computing workshop 2027	ok	2	1	[gap] EPIC PQT meeting Bristol; SPW 2027 date
+gap	quantum photonics summer school 2027	ok	3	1	[gap] NIQO Les Houches; Les Houches EQS dates; SUSSP AI-photonics skipped
+gap	Muenster quantum photonics workshop 2027 CeNTech SoN	ok	0	0	[gap] no Muenster-hosted 2027 conference found (MNF-Day, SoN symposium are annual local; Frontiers in Nano-Science symposium was Apr 2026)
+gap	Quantum Internet Alliance / QuTech Delft events 2027	ok	0	0	[gap] no 2027 QIA/QuTech conference announced; QuNeW 2027 known
+gap	Cluster of Excellence quantum conference Germany 2027 (MCQST, ML4Q, QuantumFrontiers, Quantum Alliance)	ok	0	0	[gap] only internal/outreach events; AFQC 2027 Hannover (QC software) skipped
+gap	Q-Expo 2027	ok	1	1	[gap] planning confirmed, dates TBA -> candidate
+gap	Quantum Meets conference 2027	ok	1	1	[gap] Amsterdam 18-21 May 2027
+gap	QuantERA conference 2027	ok	0	0	[gap] no 2027 event
+gap	Jena quantum photonics workshop 2027 Abbe Center	ok	1	1	[gap] WSOF 2027 Jena; Jena LIGHT PQC workshop was 2026 (no 2027 yet)
+gap	Stuttgart IQST / Karlsruhe KIT quantum photonics workshop 2027	ok	0	0	[gap] KSOP summer school biennial (2026 past); IQST Day internal
+gap	Berlin quantum photonics workshop 2027 TU/HU Berlin	ok	3	3	[gap] AMPD 2027, Nitrides in a New Light, Frontiers in Light-Matter Interaction
+gap	International SPAD Sensor Workshop ISSW 2027/2028	ok	1	1	[gap] biennial -> ISSW 2028 placeholder
+gap	Quantum Effects 2027 Stuttgart	ok	1	1	[gap] Oct 2027 expected -> candidate
+gap	FNS 2027 Frontiers of Nanomechanical Systems	ok	1	0	[gap] dates 28 Jun-1 Jul 2027 confirmed
+gap	DPG Fruehjahrstagung 2028 SKM SAMOP (DPG Fachverband/AK events)	ok	2	1	[gap] SKM 2028 Regensburg 12-17 Mar; SAMOP 2028 3-7 Apr venue TBA (update)
+gap	quantum photonics workshop Hong Kong OR Toronto 2027	ok	0	0	[gap] nothing credible; Toronto IIER event predatory
+gap	ISEC 2027 International Superconductive Electronics Conference	ok	1	0	[gap] IEEE CSC listing 24-28 Oct 2027
+gap	META 2027 Metamaterials Photonic Crystals Plasmonics	ok	1	1	[gap] Niagara Falls 13-16 Jul 2027
+gap	nonlinear integrated photonics / microcomb workshop 2027 Europe	ok	2	0	[gap] surfaced ECIO27 dates (update) and WSOF
+gap	Les Houches 2027 programme (full listing)	ok	4	2	[gap] NIQO, Quantum NEST new; EQS dates; Photonics&AI known
+hub	Optica events calendar	ok	7	2	[hubs1] events URL https://www.optica.org/events (calendar PDF https://opticaorg-dev-cac7d2csctagc8bm.z01.azurefd.net/$web/optica/media/files/events/focus/2026/optica_2027_annual_calendar_final-web.pdf); optica.org/cleoconference/ofcconference/frontiersinoptics blocked for WebFetch - read via Exa. IPR row corrected (Auckland Jul 2027)
+hub	SPIE events	ok	7	3	[hubs1] events URL https://spie.org/conferences-and-exhibitions/conferences-and-exhibitions-calendar (spie.org not crawlable; mirror lux.spie.org used)
+hub	IEEE Photonics Society conferences	ok	8	4	[hubs1] events URL https://ieeephotonics.org/conferences/ (upcoming-events table: SiPhotonics, SUM, RAPID, IPC 2027 etc.)
+hub	IEEE Quantum Week	ok	1	1	[hubs1] events URL https://qce.quantum.ieee.org/ (2026 site announces QCE27 10-15 Oct 2027 Raleigh)
+hub	DPG	ok	5	2	[hubs1] events URL https://www.dpg-physik.de/aktivitaeten-und-programme/tagungen/fruehjahrstagungen ; schools https://www.dpg-physik.de/ueber-uns/physikzentrum-bad-honnef/bad-honnef-physics-schools ; SAMOP 2028 venue still TBA
+hub	Wilhelm and Else Heraeus Foundation	ok	10	8	[hubs1] events URL https://www.we-heraeus-stiftung.de/veranstaltungen/ (also /kategorie/we-heraeus-seminar/ and /kategorie/binationales-we-heraeus-seminar/ - pagination inconsistent, used category pages to cover May-Aug 2027)
+hub	European Optical Society / EPS QEOD	ok	4	3	[hubs1] events URLs https://www.europeanoptics.org/events.html ; https://eps.org/who-we-are/members/divisions-and-groups/quantum-electronics-optics-division/ ; Europhoton https://www.europhoton.org/ ; Nanometa https://www.nanometa.org/
+hub	CLEO/Europe-EQEC	ok	1	0	[hubs1] events URL https://cleoeurope.org/deadlines/ ; start corrected to 21 Jun, paper deadline 2027-01-25
+hub	Gordon Research Conferences	ok	9	4	[hubs1] events URL https://www.grc.org/find-a-conference/ (full list only partially crawlable; individual series/2027 pages checked)
+hub	Les Houches School of Physics	ok	6	3	[hubs2] events URL https://www.houches-school-physics.com/program/program-2027/ (via Exa; WebFetch DNS-blocked). Updated photonics-ai & eqs dates
+hub	Erice / Ettore Majorana Foundation	ok	1	1	[hubs2] events URL https://ettoremajoranafoundation.com/en/international-schools/ (+ ccsem.infn.it, ISSSP page lists 2027/2028 courses); quantum photonics course 2028
+hub	Cargèse IESC	ok	1	1	[hubs2] events URL https://iesc.universita.corsica/article.php?id_art=4833&id_site=46&lang=fr (2026+2027 planning); no QT4CC in 2027
+hub	Centro de Ciencias de Benasque	ok	4	1	[hubs2] events URL https://www.benasque.org/new_general/cgi-bin/years.pl?ano=2027 ; some entries untitled in crawl; SQT 2027 not visible by title
+hub	ICTP Trieste	ok	1	1	[hubs2] events URL https://indico.ictp.it/category/2l131/ and https://www.ictp.it/home/scientific-calendar
+hub	Varenna Enrico Fermi School (SIF)	ok	0	0	[hubs2] events URL https://en.sif.it/courses/fermi_school/ ; 2027 courses page not published/crawlable (403)
+hub	Quantum Flagship qt.eu events / EQTC	ok	3	1	[hubs2] events URL https://qt.eu/events/ ; EQTC 2026 deadline corrected; EQTC 2027 unconfirmed -> TBA
+hub	ePIXfab	ok	2	2	[hubs2] events URL https://epixfab.eu/en/events
+hub	PhotonHub Europe	ok	0	0	[hubs2] events URL https://www.photonhub.eu/events/ (only venture forum)
+hub	EPIC (epic-photonics.com)	ok	1	1	[hubs2] events URL https://epic-photonics.com/epic-events/
+hub	ECIO	ok	1	0	[hubs2] events URL https://www.ecio-conference.org/ ; ECIO27 May 24-27 2027 DTU Lyngby -> update ecio-2027
+hub	ECOC 2027	ok	1	0	[hubs2] events URL https://ecoc2027.org/ ; no change
+hub	MCQST	ok	0	0	[hubs2] events URL https://www.mcqst.de/news-and-events/events/index.html ; nothing in scope
+hub	ML4Q	ok	0	0	[hubs2] events URL https://ml4q.de/category/events/ ; nothing upcoming in scope
+hub	QuantumFrontiers	ok	0	0	[hubs2] events URL https://www.quantumfrontiers.de/en/current/events ; colloquia/workshops only
+hub	QuTech	ok	0	0	[hubs2] events URL https://qutech.nl/events/ ; no upcoming events
+hub	PhoQS Paderborn	ok	3	2	[hubs2] events URL https://phoqs.uni-paderborn.de/en/events ; NOEKS18 2027, QPS2028 save-the-date, FOR5044 school
+hub	ASC (Applied Superconductivity Conference)	ok	0	0	[hubs2] events URL https://www.appliedsuperconductivity.org/asc2026/future-past-ascs/ ; ASC 2028 TBD
+hub	EUCAS / ESAS	ok	1	1	[hubs2] events URL https://www.esas.org/events/ ; EUCAS 2027 Heidelberg
+hub	IEEE CSC calendar (WOLTE, ISEC)	ok	2	2	[hubs2] events URL https://ieeecsc.org/superconductivity-events-calendar ; ISEC 2027 San Diego; WOLTE 2028 placeholder
+hub	QCMC	ok	1	0	[hubs2] events URL https://www.qcmc-conference.org/ ; QCMC 2027 Ottawa Aug 9-13
+hub	QIP (IAQI)	ok	1	0	[hubs2] events URL https://qip.iaqi.org/ ; QIP 2028 host undecided
+hub	Single Photon Workshop	ok	1	0	[hubs2] events URL https://spw2027.org/ ; dates Nov 15-19 2027
+hub	NanoMeta (EPS)	ok	1	1	[hubs2] events URL https://www.nanometa.org/ ; next = Jan 2028
+hub	META conferences	ok	1	1	[hubs2] events URL https://metaconferences.org/
+hub	PIERS	ok	1	1	[hubs2] events URL https://daejeon2027.piers.org/recent-piers/ ; only Daejeon listed for 2027
+hub	ICTON	ok	1	1	[hubs2] events URL https://www.gov.pl/web/instytut-lacznosci/konferencje
+query	quantum.technology/conf/2027.html (aggregator hint)	ok	3	2	[hubs2] led to TFLN 2027 Ascona & WEH SNSPD 2027 (both verified on official pages); SPW dates
+query	"""EQTC 2027"""	ok	0	0	[hubs2] no 2027 edition info anywhere
+reverify	les-houches-photonics-ai-2027	ok	1	0	[hubs2] official Les Houches 2027 programme lists April 4–9, 2027 (was 04-05)
+reverify	les-houches-eqs-2027	ok	1	0	[hubs2] dates published: Aug 2–27, 2027 (organisers Devoret/Huard/Pop); applications open early 2027
+reverify	onna-2027	ok	1	0	[hubs2] re-verified 2026-11-11: no change (listed on Les Houches 2027 programme Sep 19–24)
+reverify	benasque-qnp-2027	ok	1	0	[hubs2] re-verified 2026-11-11: no change
+reverify	benasque-qi-2027	ok	1	0	[hubs2] re-verified 2026-11-11: no change
+reverify	benasque-sqt-2027	failed	1	0	[hubs2] re-verified 2026-11-11: NOT visible by title on Benasque 2027 list; list contains an untitled event organised by López-N
+reverify	benasque-qsi-2027	ok	1	0	[hubs2] re-verified 2026-11-11: not on Benasque 2027 list — no 2027 edition; consider renaming to 2028 placeholder
+reverify	nanolight-2027	ok	1	0	[hubs2] re-verified 2026-11-11: not on Benasque 2027 list (biennial? 2026 edition ran Mar 2026) — likely next edition 2028; keep
+reverify	cargese-qt-2027	ok	1	0	[hubs2] re-verified 2026-11-11: QT4CC not in IESC 2027 calendar (2026 edition Jun 9–19, 2026); next edition likely 2028
+reverify	eqtc-2026	ok	1	0	[hubs2] official site lists submission deadline 11 Sep 2026 (was 2026-08-03); conference 30 Nov–3 Dec unchanged
+reverify	eqtc-2027	failed	1	0	[hubs2] No official source for EQTC 2027 found (qt.eu, exact-phrase search). The Jun 22–25 2027 Munich dates match World of Quan
+reverify	ecio-2027	ok	1	0	[hubs2] ECIO27 announced: 24–27 May 2027 at DTU Lyngby; paper (2+1 pages) deadline 19 Mar 2027
+reverify	ecoc-2027	ok	1	0	[hubs2] re-verified 2026-11-11: no change
+reverify	qps-2027	ok	1	0	[hubs2] QPS is biennial; PhoQS save-the-date for QPS2028 (page reads '25.09.2028 - 29.08.2028', end date evidently a typo for 29
+reverify	asc-2028	ok	1	0	[hubs2] re-verified 2026-11-11: ASC site still lists ASC 2028 as TBD (chair Anna Leese)
+reverify	qcmc-2027	ok	1	0	[hubs2] QCMC 2027 announced on official series site: 9–13 Aug 2027, Ottawa (organiser J. Lundeen); call for abstracts opens earl
+reverify	qip-2027	ok	1	0	[hubs2] re-verified 2026-11-11: no change (Feb 20–26 2027 incl. tutorials Feb 20–21)
+reverify	qip-2028	ok	1	0	[hubs2] re-verified 2026-11-11: host not announced; QIP2026 business meeting listed bids from Chicago/UIUC, Virginia Tech, Ottaw
+reverify	spw-2027	ok	1	0	[hubs2] SPW 2027 site live: 15–19 Nov 2027 Singapore; abstract deadline 1 Jul 2027, early registration 15 Sep 2027 (note: 2026 N
+query	integrated quantum photonics conference 2026	ok	0	0	[queries] no new in-scope future events (known/past only)
+query	integrated quantum photonics conference 2027	ok	1	1	[queries] mostly past/known events; AQTI 2027 found
+query	integrated quantum photonics workshop 2026	ok	0	0	[queries] no new in-scope future events (known/past only)
+query	integrated quantum photonics workshop 2027	ok	1	0	[queries] no new in-scope future events (known/past only)
+query	integrated quantum photonics summer school 2026	ok	0	0	[queries] no new in-scope future events (known/past only)
+query	integrated quantum photonics summer school 2027	ok	1	0	[queries] no new in-scope future events (known/past only)
+query	integrated quantum photonics winter school 2026	ok	0	0	[queries] no new in-scope future events (known/past only)
+query	integrated quantum photonics winter school 2027	ok	1	0	[queries] no new in-scope future events (known/past only)
+query	integrated quantum photonics symposium 2026	ok	0	0	[queries] no new in-scope future events (known/past only)
+query	integrated quantum photonics symposium 2027	ok	1	0	[queries] no new in-scope future events (known/past only)
+query	photonic integrated circuits conference 2027	ok	1	0	[queries] OFC27, PIC International, IZTECH/AIM schools (no 2027 dates); nothing new
+query	photonic integrated circuits workshop 2027	ok	1	0	[queries] OFC27, PIC International, IZTECH/AIM schools (no 2027 dates); nothing new
+query	photonic integrated circuits summer school 2027	ok	1	0	[queries] OFC27, PIC International, IZTECH/AIM schools (no 2027 dates); nothing new
+query	photonic integrated circuits symposium 2027	ok	1	0	[queries] OFC27, PIC International, IZTECH/AIM schools (no 2027 dates); nothing new
+query	photonic integrated circuits winter school 2027	ok	1	0	[queries] OFC27, PIC International, IZTECH/AIM schools (no 2027 dates); nothing new
+query	single-photon detectors conference 2026	ok	0	0	[queries] SPW26/ISSW26 past; PD27 Beijing rejected; nothing new
+query	single-photon detectors conference 2027	ok	1	0	[queries] SPW26/ISSW26 past; PD27 Beijing rejected; nothing new
+query	single-photon detectors workshop 2026	ok	0	0	[queries] SPW26/ISSW26 past; PD27 Beijing rejected; nothing new
+query	single-photon detectors workshop 2027	ok	1	0	[queries] SPW26/ISSW26 past; PD27 Beijing rejected; nothing new
+query	single-photon detectors summer school 2026	ok	0	0	[queries] SPW26/ISSW26 past; PD27 Beijing rejected; nothing new
+query	single-photon detectors summer school 2027	ok	1	0	[queries] SPW26/ISSW26 past; PD27 Beijing rejected; nothing new
+query	single-photon detectors winter school 2026	ok	0	0	[queries] SPW26/ISSW26 past; PD27 Beijing rejected; nothing new
+query	single-photon detectors winter school 2027	ok	1	0	[queries] SPW26/ISSW26 past; PD27 Beijing rejected; nothing new
+query	single-photon detectors symposium 2026	ok	0	0	[queries] SPW26/ISSW26 past; PD27 Beijing rejected; nothing new
+query	single-photon detectors symposium 2027	ok	1	0	[queries] SPW26/ISSW26 past; PD27 Beijing rejected; nothing new
+query	single-photon sources conference 2026	ok	0	0	[queries] SPW26 past
+query	single-photon sources conference 2027	ok	0	0	[queries] nothing new
+query	single-photon sources workshop 2027	ok	0	0	[queries] nothing new
+query	single-photon sources summer school 2027	ok	0	0	[queries] nothing new
+query	single-photon sources winter school 2027	ok	1	0	[queries] Sheffield winter school (already tracked)
+query	single-photon sources symposium 2027	ok	0	0	[queries] nothing new
+query	SNSPD workshop 2027	ok	0	0	[queries] no hits; (Heraeus SNSPD seminar later found via Exa)
+query	SNSPD conference 2026	ok	0	0	[queries] past events only
+query	superconducting nanowire single-photon detectors summer school 2027	ok	0	0	[queries] none
+query	silicon photonics conference 2026	ok	1	0	[queries] known/past/industry only
+query	silicon photonics conference 2027	ok	1	0	[queries] known/past/industry only
+query	silicon photonics workshop 2026	ok	1	1	[queries] Asia-Europe SiPh course/symposium Dec 2026 (candidate)
+query	silicon photonics workshop 2027	ok	1	0	[queries] known/past/industry only
+query	silicon photonics summer school 2026	ok	1	0	[queries] known/past/industry only
+query	silicon photonics summer school 2027	ok	1	0	[queries] ePIXfab 2027 placeholder derived
+query	silicon photonics symposium 2027	ok	1	0	[queries] known/past/industry only
+query	silicon photonics winter school 2027	ok	0	0	[queries] AIM winter academy (US, no date); nothing new
+query	thin-film lithium niobate conference 2026	ok	0	0	[queries] only OFC TFLN panels / past SPIE workshop; nothing new (Ascona TFLN conf found via Exa)
+query	thin-film lithium niobate conference 2027	ok	0	0	[queries] only OFC TFLN panels / past SPIE workshop; nothing new (Ascona TFLN conf found via Exa)
+query	thin-film lithium niobate workshop 2026	ok	0	0	[queries] only OFC TFLN panels / past SPIE workshop; nothing new (Ascona TFLN conf found via Exa)
+query	thin-film lithium niobate workshop 2027	ok	0	0	[queries] only OFC TFLN panels / past SPIE workshop; nothing new (Ascona TFLN conf found via Exa)
+query	thin-film lithium niobate summer school 2027	ok	0	0	[queries] only OFC TFLN panels / past SPIE workshop; nothing new (Ascona TFLN conf found via Exa)
+query	thin-film lithium niobate symposium 2027	ok	0	0	[queries] only OFC TFLN panels / past SPIE workshop; nothing new (Ascona TFLN conf found via Exa)
+query	thin-film lithium niobate summer school 2026	ok	0	0	[queries] only OFC TFLN panels / past SPIE workshop; nothing new (Ascona TFLN conf found via Exa)
+query	thin-film lithium niobate winter school 2027	ok	0	0	[queries] only OFC TFLN panels / past SPIE workshop; nothing new (Ascona TFLN conf found via Exa)
+query	III-V on silicon conference 2027	ok	0	0	[queries] no dedicated events; ISLC26 past; Leeds nanofab winter school off-topic
+query	III-V on silicon workshop 2027	ok	0	0	[queries] no dedicated events; ISLC26 past; Leeds nanofab winter school off-topic
+query	III-V on silicon symposium 2026	ok	0	0	[queries] no dedicated events; ISLC26 past; Leeds nanofab winter school off-topic
+query	III-V on silicon conference 2026	ok	0	0	[queries] no dedicated events; ISLC26 past; Leeds nanofab winter school off-topic
+query	III-V on silicon winter school 2027	ok	0	0	[queries] no dedicated events; ISLC26 past; Leeds nanofab winter school off-topic
+query	III-V on silicon symposium 2027	ok	0	0	[queries] no dedicated events; ISLC26 past; Leeds nanofab winter school off-topic
+query	III-V on silicon photonics summer school 2027	ok	0	0	[queries] none
+query	Compound Semiconductor Week 2027 CSW dates location	ok	1	1	[queries] CSW 2027 Venice Lido 15-18 Jun 2027 (verified csw2027.com)
+query	call for papers integrated quantum photonics 2027	ok	0	0	[queries] journal special issues only
+query	call for abstracts single photon 2027	ok	2	2	[queries] IISW 2027 (SPAD sensors), AQTI 2027
+query	registration open quantum photonics workshop 2027	ok	1	0	[queries] quantum.info hub found; others known/virtual
+query	call for papers silicon photonics 2027	ok	0	0	[queries] journal calls, SiRF (rejected)
+query	lithium niobate photonics workshop 2027	ok	0	0	[queries] SFO LNOI school 2025 past; nothing new
+query	EXA: pages similar to Optica Quantum 2.0 (https://www.optica.org/events/topical_meetings/quantum/) - quantum photonics conferences 2027	ok	4	2	[queries] QSL27 Linz, APS QIS 2027; QPAIN date update; WASET/GMEPQT/AQTI rejected or low
+query	EXA: Benasque 2027 workshops nanophotonics/nanolight (similar to https://benasque.org/2027nanolight/)	ok	2	1	[queries] CEN 2027; Benasque QNP deadlines; no Nanolight 2027 (alternates with QNP, next Nanolight likely 2028)
+query	EXA: similar to https://spw2026.org/ - single photon workshops 2027	ok	5	3	[queries] SPW 2027 Singapore Nov 15-19 (update); Heraeus SNSPD seminar; IISW 2027; quantum.info hub
+query	EXA: similar to https://ecio-conference.org/ - ECIO 2027 / European integrated optics 2027	ok	6	3	[queries] ECIO27 DTU 24-27 May (update); OMN 2027; E-MRS symposium; OWTNM 2027 update; PIC Intl date fix
+query	EXA: similar to https://phoqs.uni-paderborn.de/en/veranstaltungen/quantum-photonics-spotlight-2026 - German quantum photonics events 2027	ok	3	2	[queries] NOEKS 18 Paderborn; Heraeus entanglement seminar (via follow-up); QPS biennial
+query	upcoming 2027 conferences and workshops on silicon photonics, thin-film lithium niobate and III-V on silicon integration in Europe	ok	5	3	[queries] OMN27, Mauterndorf winterschool, ICTON27; EuroSOI/SEMI 3D/AGSOPTICS rejected
+query	EXA: International Conference on Thin Film Lithium Niobate Integrated Photonics 2027 Ascona	ok	1	1	[queries] ETH ONG news confirms 5-10 Sep, Ascona; tfln.ethz.ch
+query	EXA: Bristol Quantum Information Technologies Workshop BQIT 2027	ok	1	1	[queries] BQIT:27 26-28 Apr 2027
+query	EXA: Compound Semiconductor Week 2027 official website	ok	1	0	[queries] confirms csw-2027
+query	EXA: E-MRS Spring Meeting 2027 Strasbourg dates	ok	1	1	[queries] May 17-21 2027, abstracts 2027-01-20
+query	EXA: ePIXfab silicon photonics summer school 2027	ok	2	1	[queries] 2027 edition Ghent (dates TBA); Asia-Europe course Dec 2026
+query	EXA: WE-Heraeus Quantum Entanglement Feb 2027	ok	1	1	[queries] 14-17 Feb 2027
+query	EXA: NQCC Scalability Conference 2027 Oxford	ok	1	1	[queries] 31 Mar-2 Apr 2027
+query	WebFetch https://easychair.org/cfp/AQTI_2027	failed	0	0	[queries] easychair.org not resolvable in sandbox; content obtained via Exa
+reverify	spw-2027	ok	1	0	[queries] SPW 2027 announced: 15-19 Nov 2027 Singapore; abstracts due 2027-07-01, early reg 2027-09-15 (official spw2027.org)
+reverify	ecio-2027	ok	1	0	[queries] ECIO27 announced: 24-27 May 2027 at DTU Lyngby; papers due 2027-03-19, early bird to 2027-03-29, standard reg to 2027-04
+reverify	owtnm	ok	1	0	[queries] OWTNM 2027 announced: Třešť, CZ, 24-26 May 2027 (welcome in Prague May 23)
+reverify	pic-international-2027	ok	1	0	[queries] dates corrected to 12-14 April 2027 per official homepage
+reverify	ieee-qpain-2027	ok	1	0	[queries] official site now lists 31 Mar-3 Apr 2027; paper deadline 2026-12-20; registration deadline 2027-02-20
+reverify	qps-2027	ok	1	0	[queries] re-verified 2026-11-11: no 2027 edition on PhoQS events page; series ran 2024 and 2026 (biennial pattern) so next is lik
+reverify	cleo-europe-2027	ok	1	0	[queries] EPS/cleoeurope.org About page: technical conference Mon 21 - Fri 25 June 2027 at ICM Munich (World of Photonics Congress
+reverify	optica-quantum-2027	ok	1	0	[queries] re-verified 2026-11-11 (hub listing): Copenhagen 7-10 Jun 2027 consistent; no change
+reverify	benasque-qnp-2027	ok	1	0	[queries] Benasque page: abstract deadline Jan 08, fee rises after Feb 14, application deadline Feb 28 (year 2027 inferred from ev
+reverify	quantum-photonics-erfurt-2027	ok	1	0	[queries] re-verified 2026-11-11: 27-28 April 2027, CongressCenter Erfurt; no change
+reverify	ipc-2026	ok	1	0	[reverify1] no change
+reverify	eqtc-2026	ok	1	0	[reverify1] abstract_deadline, early_bird_deadline, status
+reverify	q2b-chicago-2026	ok	1	0	[reverify1] abstract_deadline, status
+reverify	photonics-west-2027	ok	1	0	[reverify1] paper_deadline, early_bird_deadline, status
+reverify	qip-2027	ok	1	0	[reverify1] no change
+reverify	dpg-samop-2027	ok	1	0	[reverify1] paper_deadline
+reverify	ofc-2027	ok	1	0	[reverify1] paper_deadline, early_bird_deadline
+reverify	dpg-skm-2027	ok	1	0	[reverify1] abstract_deadline, paper_deadline, registration_deadline, early_bird_deadline, website, status
+reverify	benasque-qnp-2027	ok	1	0	[reverify1] abstract_deadline, early_bird_deadline, status
+reverify	spie-oo-2027	ok	1	0	[reverify1] abstract_deadline, status
+reverify	les-houches-photonics-ai-2027	ok	1	0	[reverify1] start_date, abstract_deadline, registration_deadline, website, status
+reverify	benasque-sqt-2027	ok	1	0	[reverify1] start_date, end_date
+reverify	ieee-qpain-2027	ok	1	0	[reverify1] start_date, end_date, paper_deadline, registration_deadline, status
+reverify	aps-summit-2027	ok	1	0	[reverify1] abstract_deadline
+reverify	pic-international-2027	ok	1	0	[reverify1] start_date
+reverify	opic-2027	ok	1	0	[reverify1] abstract_deadline, registration_deadline, early_bird_deadline, status
+reverify	cleo-2027	ok	1	0	[reverify1] abstract_deadline, status
+reverify	dgao-2027	ok	1	0	[reverify1] abstract_deadline, early_bird_deadline
+reverify	optica-quantum-2027	ok	1	0	[reverify1] start_date, abstract_deadline, early_bird_deadline, status
+reverify	benasque-qi-2027	ok	1	0	[reverify1] no change
+reverify	cleo-europe-2027	ok	1	0	[reverify1] start_date, abstract_deadline, paper_deadline, status
+reverify	eqtc-2027	ok	1	0	[reverify1] start_date, end_date, location
+reverify	grc-quantum-sensing-2027	ok	1	0	[reverify1] no change
+reverify	grc-qclm-2027	ok	1	0	[reverify1] no change
+reverify	ieee-rapid-2027	ok	1	0	[reverify1] no change
+reverify	qcrypt-2027	ok	1	0	[reverify1] no change
+reverify	ecoc-2027	ok	1	0	[reverify1] abstract_deadline, paper_deadline, registration_deadline, early_bird_deadline
+reverify	spw-2027	ok	1	0	[reverify1] start_date, end_date, abstract_deadline, early_bird_deadline, website
+reverify	aps-summit-2028	ok	1	0	[reverify1] no change
+reverify	ofc-2028	ok	1	0	[reverify1] no change
+reverify	spie-pe-2028	ok	1	0	[reverify1] no change
+reverify	asc-2028	ok	1	0	[reverify2] re-verified 2026-11-11: no change (ASC 'Future ASCs' page still lists ASC 2028 as TBD/TBD; 2028 chair Anna Leese)
+reverify	benasque-qsi-2027	ok	1	0	[reverify2] re-verified 2026-11-11: not in Benasque 2027 programme (only 'Quantum Information 2027' Jun20-Jul9, already tracked as benasque-qi-2027); QSI ran 2024 & 2026 so
+reverify	cargese-qt-2027	ok	1	0	[reverify2] re-verified 2026-11-11: no change; QT4CC not in IESC Cargèse 2027 planning list, so a 2027 edition looks unlikely (2026 ran Jun 8-20) — monitor; id year may be 
+reverify	dpg-samop-2028	ok	1	0	[reverify2] re-verified 2026-11-11: DPG event page now lists SAMOP 2028 as 03.-07.04.2028 (combined with 91st DPG Annual Conference); venue still TBA
+reverify	ecio-2027	ok	1	0	[reverify2] placeholder announced (2026-11-11): ECIO27 24-27 May 2027 at DTU Lyngby; 2-page paper deadline 19 Mar 2027; registration/early-bird TBA; submission-open status 
+reverify	grc-mech-quant-2028	ok	1	0	[reverify2] re-verified 2026-11-11: no change (GRC series page lists last held 2026; no 2028 meeting posted yet)
+reverify	grc-plasmonics-nano-2028	ok	1	0	[reverify2] re-verified 2026-11-11: no change (GRC series page lists last held 2026; no 2028 meeting posted yet)
+reverify	grc-quantum-science-2028	ok	1	0	[reverify2] re-verified 2026-11-11: no change (GRC series page lists last held 2026; no 2028 meeting posted yet)
+reverify	icqe	ok	1	0	[reverify2] announced (2026-11-11): ICQE 2027 (3rd ed.) at MIT, 13-16 Jun 2027; abstract submission via Indico, deadline 1 Apr 2027; registration deadlines TBA
+reverify	ieee-siphotonics-2027	ok	1	0	[reverify2] announced (2026-11-11): SiPhotonics 2027 Taipei 11-14 Apr 2027 (IEEE PS list gives 12-14 Apr main conf.); paper deadline (extended) 26 Oct 2026 has passed; regi
+reverify	ipc-2027	ok	1	0	[reverify2] dates confirmed (2026-11-11) by IEEE Photonics Society conference list: IPC 2027 7-11 Nov 2027, Eindhoven; deadlines TBA (ieee-ipc.org not yet showing 2027)
+reverify	lake-como-uqo-2027	ok	1	0	[reverify2] re-verified 2026-11-11: no 2027 edition announced (2026 ran 27-31 Jul 2026; Lake Como 2027 schools page 'under construction'); website pointed to school site
+reverify	les-houches-eqs-2027	ok	1	0	[reverify2] dates published (2026-11-11): 2-27 Aug 2027 (Les Houches programme + school site); applications open early 2027, deadline TBA
+reverify	nanolight-2027	ok	1	0	[reverify2] re-verified 2026-11-11: Nanolight not in Benasque 2027 programme (odd-year slot is Quantum Nanophotonics 2027, tracked as benasque-qnp-2027); after Nanolight 20
+reverify	nrw-nano-2027	ok	1	0	[reverify2] dates announced (2026-11-11) by organiser NMWP.NRW: 12th NRW Nano Conference 28-29 Sep 2027, Dortmund; deadlines TBA
+reverify	opon-next	ok	1	0	[reverify2] re-verified 2026-11-11: no 9th OPON announced (last: OPON2025 Münster, 12-14 Feb 2025; invitation-only)
+reverify	owtnm	ok	1	0	[reverify2] announced (2026-11-11): OWTNM 2027 Třešť, CZ, 24-26 May 2027 (welcome in Prague 23 May); marked tentative, local site in preparation; deadlines TBA
+reverify	photonics-west-2028	ok	1	0	[reverify2] re-verified 2026-11-11: no change (SPIE has not posted PW 2028 dates; PW 2027 is 30 Jan-4 Feb 2027)
+reverify	qcmc-2027	ok	1	0	[reverify2] announced (2026-11-11): QCMC 2027 at University of Ottawa, 9-13 Aug 2027; abstract call opens early 2027 (deadlines TBA)
+reverify	qip-2028	ok	1	0	[reverify2] re-verified 2026-11-11: host not yet announced officially (bids at QIP2026 business meeting: Chicago/UIUC, Ottawa, UT Austin, Virginia Tech); website corrected 
+reverify	sioe-2027	ok	1	0	[reverify2] re-verified 2026-11-11: dates still TBA; website corrected — sioe.org is an unrelated economics society; SIOE optoelectronics conf. is run by the Compound Semic
+reverify	mne-2027	ok	1	0	[reverify2] dates announced (2026-11-11): MNE 2027 Rotterdam 20-23 Sep 2027 (official 'coming soon' site); deadlines TBA
+reverify	onna-2027	ok	1	0	[reverify2] re-verified 2026-11-11: no change (WE-Heraeus page: 19-24 Sep 2027, Les Houches; no deadlines posted)
+reverify	sheffield-qon-winter-school-2027	ok	1	0	[reverify2] re-verified 2026-11-11: registration open; early-bird until 14 Dec 2026, poster abstract 15 Dec 2026, registration 15 Jan 2027; status cfp_open confirmed
+reverify	ipr-2027	ok	1	0	[reverify2] CORRECTED (2026-11-11): official Optica page lists IPR within Advanced Photonics Congress 18-22 Jul 2027, Grand Millennium Auckland, New Zealand (previous Denve
+reverify	iqn-summer-school-2027	ok	1	0	[reverify2] re-verified 2026-11-11: 27 Jun-3 Jul 2027 confirmed; page says registration opens early Nov 2026 (deadline TBA)
+reverify	quantum-networks-summit-2027	ok	1	0	[reverify2] re-verified 2026-11-11: 7-8 Apr 2027 Palais des Congrès Paris confirmed; 2027 page says CfP open until 'September 18th' (year not stated; inferred 2026 since ev
+reverify	quantum-photonics-erfurt-2027	ok	1	0	[reverify2] re-verified 2026-11-11: 27-28 Apr 2027 at CongressCenter Erfurt; call for speakers (30-min talks/pitches) open, deadline not stated
+reverify	qunew-2027	ok	1	0	[reverify2] announced (2026-11-11): QuNeW 2027 at OIST 12-14 May 2027; submissions open 12 Oct-12 Dec 2026 (AoE); acceptance 31 Jan 2027; registration opens 1 Feb 2027
+reverify	qps-2027	ok	1	0	[reverify2] announced (2026-11-11): PhoQS save-the-date QPS2028, 25-29 Sep 2028 (page typo '29.08.2028'), Paderborn; series is biennial (2024, 2026, 2028) — id year 2027 is
+series	fio-2026 -> FiO LS 2027	ok	1	1	[series1] annual; Sep/Oct; https://www.frontiersinoptics.com/ - 2027 Seattle 26-30 Sep
+series	eosam-2026 -> EOSAM 2027	ok	1	1	[series1] annual; late Aug/Sep; https://www.europeanoptics.org/ - 2027 Wroclaw 27-30 Sep; 2028 not announced
+series	ieee-qce26 -> QCE27	ok	1	1	[series1] annual; Sep/Oct; https://qce.quantum.ieee.org/ - 2027 Raleigh 10-15 Oct; /2027 site in maintenance
+series	tqc-2026 -> TQC 2027	ok	1	1	[series1] annual; Aug/Sep; https://tqc-conference.org/ - Grenoble per quantum.info only, dates TBA
+series	spie-op-2026 -> SPIE O+P 2027	ok	1	1	[series1] annual; Aug; https://spie.org/optics-photonics - spie.org blocked in this session (WebFetch ENOTFOUND, Exa empty); dates from SDCC calendar
+series	apc-2026 -> Optica APC 2027	ok	1	1	[series1] annual; July; https://www.optica.org/events/congress/advanced_photonics_congress/ - Auckland 18-22 Jul 2027. NOTE: existing row ipr-2027 (Denver, 2027-04-17) conflicts with IPR being listed inside APC 2027 Auckland - main agent should re-check ipr-2027
+series	ieee-sum-2026 -> SUM 2027	ok	1	1	[series1] annual; July; https://ieee-sum.org/ - Porto 12-14 Jul 2027
+series	cewqo-2026 -> CEWQO 2027	ok	0	1	[series1] annual; Jun/Jul; rotating host sites (cewqo30: https://www.oqt.nat.fau.de/events/cewqo30/) - 2027 host not found; placeholder
+series	icton-2026 -> ICTON 2027	ok	1	1	[series1] annual; July; https://www.gov.pl/web/instytut-lacznosci/icton-2027 - Ischia 4-8 Jul 2027, papers due 2027-03-31
+series	damop-2026 -> DAMOP 2027/2028	ok	2	2	[series1] annual; late May/June; https://engage.aps.org/damop - 2027 Chicago, 2028 Denver
+series	icols-2025 -> ICOLS 2027	ok	1	1	[series1] biennial (odd years); June/July; https://icols2027.com/ - K'gari 12-16 Jul 2027
+series	photonics-north-2026 -> PN 2027	ok	1	1	[series1] annual; late May/June; https://www.photonicsnorth.com/ - Ottawa 8-11 Jun 2027, abstracts due 2026-12-20 (from organiser LinkedIn; site not yet updated)
+series	oecc-2026 -> OECC 2027	ok	1	1	[series1] annual; late Jun/early Jul; IEEE PS list - Taichung 4-8 Jul 2027; official OECC 2027 site not found
+series	acp-2025 -> ACP 2026/2027	ok	0	1	[series1] annual; early Nov; https://www.acpconf.com/ - ACP 2026 already held Nov 1-4 2026 (Hangzhou) -> past, added acp-2027 placeholder
+series	piers-fall-2025 -> PIERS 2027	ok	1	1	[series1] 1-2 editions/yr (spring + sometimes fall); https://www.piers.org/ - only PIERS 2027 Daejeon 9-13 May announced, abstract deadline 2026-11-20 (imminent)
+series	moc-2025 -> MOC 2027	ok	1	1	[series1] annual (Japan / abroad alternating); Sep/Oct; https://www.comemoc.com/ - MOC2026 Brussels past; MOC2027 Okayama 3-6 Oct
+series	islc-2026 -> ISLC 2028	ok	0	1	[series1] biennial (even years); Jun-Oct; https://ieee-islc.org/ - 2028 not announced; placeholder
+series	icap-2026 -> ICAP 2028	ok	1	1	[series1] biennial (even years); Jun/Jul; ICAP30 Chicago 2-7 Jul 2028 per UCAN listing
+series	egas-2026 -> EGAS 58 (2027)	ok	1	1	[series1] annual; Jun-Aug; https://www.eps-egas.org/ - Lund 15-19 Aug 2027
+series	spie-pfq-2026 -> PfQ 2027	ok	0	1	[series1] annual; June; Waterloo; spie.org blocked; 2027 dates TBD -> placeholder
+series	photonics-switching-2026 -> PSC 2027	ok	1	1	[series1] annual, rotating Americas/Europe/Asia; Sep; https://psc2026.org/ - 2027 Montreal 20-22 Sep per TPC co-chair page (candidate)
+series	spie-ds-2026 -> SPIE D+S 2027	ok	1	1	[series1] annual; April; https://spie.org/defense-and-commercial-sensing - 18-22 Apr 2027 Orlando (exhibitor listings; spie.org blocked)
+series	eftf-2026 -> EFTF 2027	ok	1	1	[series1] annual (joint with IFCS in odd years); April; https://eftf.org/ - EFTF-IFCS 2027 Garching 4-9 Apr
+series	icop-2026 -> ICOP 2028	ok	0	1	[series1] biennial (even years: 2022 Trento, 2024 Florence, 2026 L'Aquila); June; https://www.icop2026.it/ - placeholder 2028
+series	les-houches-pa-2026 -> next	ok	0	1	[series1] irregular (2023 workshop, 2026 school); June; https://photon-atoms-26.leshouches.science/ - not in Houches 2027 programme; candidate placeholder. Houches 2027 programme scanned: 5 extra schools added (NIQO, FTQC, Adaptive, Quantum-NEST, QFluids); ONNA27 and Photonics&AI already tracked
+series	grc-mech-quant-2026 -> grc-mech-quant-2028	ok	1	0	[series1] biennial (24-month cycle); Jan-Mar recently; https://www.grc.org/mechanical-systems-in-the-quantum-regime-conference/ - 2028 row exists, dates not yet posted
+series	hdqs-2026 -> next	ok	0	1	[series1] first edition (irregular); 2026 edition actually ran Oct 4-9 2026 (archived row says 2026-09-20 - check); https://benasque.org/2026hdqs/ - candidate placeholder
+series	lake-como-ufqp-2026 -> next	ok	0	0	[series1] irregular/biennial; July; https://ufqp.lakecomoschool.org/ - placeholder lake-como-uqo-2027 already exists; LCSAS 2027 calendar under construction
+reverify	ipc-2027 / ieee-siphotonics-2027	ok	2	0	[series1] bonus from IEEE PS conference list: IPC 2027 Eindhoven 7-11 Nov; SiPhotonics 2027 Taipei 12-14 Apr
+series	bqit-2026 -> BQIT 2027	ok	1	1	[series2] annual, late April; https://www.bristol.ac.uk/qet-labs/events/bqit-workshop/ ; BQIT:27 26-28 Apr 2027
+series	quantumatter-2026 -> QUANTUMatter 2027	ok	1	1	[series2] annual (Phantoms Foundation), usually Apr-May but 2027 moves to Oct 19-22 San Sebastián as QuAI2027; https://www.quantumconf.eu/2027/
+series	ampd-2026 -> AMPD 2027	ok	1	1	[series2] annual, April, ZIB Berlin; https://www.zib.de/workshop-photonic-devices/ ; 19th AMPD 7-9 Apr 2027
+series	cargese-qt / inphomir-school-2026	ok	1	1	[series2] QT4CC not in IESC 2027 calendar (cadence unclear, 1st ed. 2026); INPHOMIR school one-off (project ends Nov 2027) -> rejected; found Cargèse Metasurfaces colloquium Apr 2027; https://iesc.universita.corsica/
+series	it-fab-school-2026	ok	1	1	[series2] 1st ed. Oct 2026 Turin, to rotate among It-fab nodes (presumably annual, autumn); placeholder; https://handsonschool.it-fab.it/
+series	bad-honnef-photonics-2026 -> Applied Photonics 2027	ok	1	1	[series2] recurring DPG/WE-Heraeus school (Sep 2026 edition), cadence unclear; no 2027 date on appliedphotonics.de or in the 2027 Bad Honnef schools shown -> low-relevance placeholder; https://www.appliedphotonics.de/
+series	quantum-effects-2026 -> Quantum Effects 2027	ok	1	1	[series2] annual, early October, Messe Stuttgart; 2027 dates not on official site; placeholder; https://www.messe-stuttgart.de/quantum-effects/en/
+series	photonics-days-2026 -> Photonics Days 2027	ok	1	1	[series2] annual, October, Berlin-Adlershof (OpTecBB); 6-7 Oct 2027; https://optecbb.de/en/association/photonics-days.html
+series	epic-manufacturing-2026 -> EPIC events 2027	ok	3	2	[series2] EPIC runs many meetings; manufacturing workshop next 12 Jan 2027 online (rejected low rel.); added EPIC Photonics for QT (Bristol, 19-20 Oct 2027) and IP & Packaging at imec (16-17 Feb 2027); https://epic-photonics.com/epic-events/
+series	pic-summit-europe-2026 -> PSE 2027	ok	1	1	[series2] annual, Nov, Eindhoven (Evoluon); 2027 confirmed but dates only from exhibitor page (30 Nov-1 Dec) -> candidate; https://www.picsummiteurope.com/
+series	iqt-nordics-2026 -> IQT Nordics 2027	ok	1	1	[series2] annual June, rotates DK/FI/NO/SE; 2027 Copenhagen 7-9 Jun (organiser LinkedIn); 2028 Finland; https://iqtevent.com/
+series	quantum-korea-2026 -> 2027	ok	1	1	[series2] annual late Jun/early Jul Seoul (MSIT); 2027 not announced -> placeholder; https://quantum-korea.kr/en/main
+series	quantum-tech-world-2026 -> 2027	ok	1	1	[series2] annual, May/June, Boston; 25-26 May 2027 Encore Boston Harbor; https://www.quantumtechexpo.com/
+series	ccw-london-2026	ok	0	0	[series2] TCCA critical comms (radio) show, 2027 in Amsterdam 11-13 May -> rejected out of scope
+series	ecoc-2027 (verify)	ok	1	0	[series2] annual, Sep/Oct; ECOC2027 10-14 Oct Milano confirmed, deadlines added; https://ecoc2027.org/
+series	optima / pgc / icisct	ok	0	0	[series2] generic/regional IEEE-cosponsored telecom/photonics/IT conferences -> rejected low relevance
+series	inp-webinar-2026	ok	0	0	[series2] one-off INPHOMIR project webinar -> rejected
+series	EUCAS 2027	ok	1	1	[series2] biennial odd years, September; 5-10 Sep 2027 Heidelberg; https://eucas2027.esas.org/
+series	ISEC 2027	ok	1	1	[series2] biennial odd years, rotating continents; 24-28 Oct 2027 San Diego (IEEE CSC calendar)
+series	WOLTE 2027/2028	ok	1	1	[series2] biennial even years (2022, 2024, 2026), ~June, Italy; placeholder WOLTE 2028; https://2026.ieee-wolte.org/
+series	NanoMeta 2027	ok	1	1	[series2] biennial even years, January, Seefeld; no 2027 - next Jan 2028 (EPS); https://eps.org/tag/nanometa/
+series	META 2027	ok	1	1	[series2] annual, July; 13-16 Jul 2027 Niagara Falls, papers due 12 Feb 2027; https://metaconferences.org/
+series	Europhoton 2028	ok	1	1	[series2] biennial even years, Aug/Sep; 2026 Arcachon; 2028 TBA -> placeholder; https://www.europhoton.org/
+series	CLEO Pacific Rim 2027	ok	1	1	[series2] biennial even years (2026 Beijing); next 22-26 Aug 2028 Taipei; https://www.cleopacificrim.com/
+series	SPIE Photonics for Quantum	ok	1	1	[series2] annual June, Waterloo; 2027 not yet announced -> placeholder; https://spie.org/conferences-and-exhibitions/photonics-for-quantum
+series	QTML	ok	0	0	[series2] annual Nov/Dec; QTML 2026 6-11 Dec Stellenbosch; out of scope (QML) -> rejected
+series	Quantum 2.0 (Optica)	skipped	0	0	[series2] already tracked as optica-quantum-2027
+series	QuTech / Delft quantum events	ok	1	1	[series2] QuTech events page: Delft Quantum Showcase (Oct), Spin Qubit (2026), nothing photonic for 2027; QDNL Quantum Meets 18-21 May 2027 added as candidate; https://qutech.nl/newsroom/events/
+series	QIPC conference / schools	ok	0	0	[series2] QIPC series (EU QUIE2T) defunct since 2013 -> rejected
+series	Integrated Quantum Photonics workshops	ok	3	2	[series2] no dedicated IQP workshop series found for 2027; found Mauterndorf Winterschool Feb 2027 (added), META Quantum Nanophotonics Workshop (part of meta-2027), SPW2027 dates (update), IEEE QCNC 2027 (candidate); QuNeW 2027 already tracked
+series	GRC Quantum Photonics?	ok	0	0	[series2] no GRC named Quantum Photonics exists; GRC 2027 relevant ones (QCLM, Quantum Sensing) already tracked; Lasers in Micro/Nano/Bio GRC inactive
+series	Erice International School of Quantum Electronics	ok	0	0	[series2] irregular courses (68th Apr 2025, 69th Nov 2025); no 2027 QE course listed yet; Erice attosecond school 2027 out of scope; https://ettoremajoranafoundation.com/en/international-schools/international-school-of-quantum-electronics/
+series	Varenna Enrico Fermi school	ok	0	0	[series2] 3 courses/yr, June-July; 2026 had 'Quantum Dynamics and Communication'; 2027 courses not yet published; https://en.sif.it/courses/
+series	Les Houches 2027	ok	4	3	[series2] programme 2027 published; added NIQO (Apr 18-23), FTQC workshop (Apr 25-30), Quantum NEST (Jun 6-11); dates added to les-houches-eqs-2027 (Aug 2-27); Photonics&AI and ONNA27 already tracked; https://www.houches-school-physics.com/program/program-2027/program-2027-1733272.kjsp
+series	ICTP Winter College on Optics 2027	ok	1	1	[series2] annual, February, Trieste; 2027 theme biophotonics (1-12 Feb), applications closed; https://indico.ictp.it/event/11411
+series	WE-Heraeus photonics seminars 2027	ok	2	2	[series2] added SNSPD seminar (19-24 Sep 2027, rel 5) and 879th Quantum Entanglement (14-17 Feb 2027); other 2027 WEH seminars (magnonics, neutral atoms, QLife, driven systems) adjacent/out of scope; https://www.we-heraeus-stiftung.de/veranstaltungen/kategorie/we-heraeus-seminar/
+reverify	ecio-2027	ok	1	0	[series2] ECIO27 announced 24-27 May 2027 DTU Lyngby; annual; https://ecio-conference.org/
+reverify	ipc-2027	ok	1	0	[series2] annual Nov; 7-11 Nov 2027 Eindhoven per IEEE Photonics Society list
+reverify	ieee-siphotonics-2027	ok	1	0	[series2] annual April; 12-14 Apr 2027 Taipei; submissions closed Oct 2026
+reverify	photonics-west-2028	ok	0	0	[series2] annual late Jan, Moscone; 2028 dates not published
+reverify	qip-2028	ok	0	0	[series2] annual Jan/Feb; 2028 host undecided publicly (4 N-American bids)
+reverify	spw-2027	ok	1	0	[series2] biennial odd years; SPW2027 15-19 Nov 2027 Singapore (found incidentally)
+reverify	qps-2027	ok	1	1	[series2] QPS biennial even years; QPS2028 25-29 Sep 2028 added; qps-2027 placeholder should be retired
+gap	Glasgow Quantum & Nano Week 2026	ok	1	1	[series2] seen in IEEE CSC calendar (2-4 Dec 2026); candidate, not verified on official site
+series	2d-tmds	ok	1	0	next edition row present: 2d-tmds-2027 (row checked this run via reverify/series/hub passes)
+series	acp	ok	1	0	next edition row present: acp-2027 (row checked this run via reverify/series/hub passes)
+series	ampd	ok	1	0	next edition row present: ampd-2027 (row checked this run via reverify/series/hub passes)
+series	apc	ok	1	0	next edition row present: apc-2027 (row checked this run via reverify/series/hub passes)
+series	aps-qis	ok	1	0	next edition row present: aps-qis-2027 (row checked this run via reverify/series/hub passes)
+series	aps-summit	ok	1	0	next edition row present: aps-summit-2027 (row checked this run via reverify/series/hub passes)
+series	aqis	ok	1	0	next edition row present: aqis-2027 (row checked this run via reverify/series/hub passes)
+series	aqti	ok	1	0	next edition row present: aqti-2027 (row checked this run via reverify/series/hub passes)
+series	asc	ok	1	0	next edition row present: asc-2028 (row checked this run via reverify/series/hub passes)
+series	bad-honnef-nanostructures	ok	1	0	next edition row present: bad-honnef-nanostructures-2027 (row checked this run via reverify/series/hub passes)
+series	bad-honnef-photonics	ok	1	0	next edition row present: bad-honnef-photonics-2027 (row checked this run via reverify/series/hub passes)
+series	benasque-cen	ok	1	0	next edition row present: benasque-cen-2027 (row checked this run via reverify/series/hub passes)
+series	benasque-qi	ok	1	0	next edition row present: benasque-qi-2027 (row checked this run via reverify/series/hub passes)
+series	benasque-qnp	ok	1	0	next edition row present: benasque-qnp-2027 (row checked this run via reverify/series/hub passes)
+series	benasque-qsi	ok	1	0	next edition row present: benasque-qsi-2027 (row checked this run via reverify/series/hub passes)
+series	benasque-sqt	ok	1	0	next edition row present: benasque-sqt-2027 (row checked this run via reverify/series/hub passes)
+series	bn-workshop	ok	1	0	next edition row present: bn-workshop-2027 (row checked this run via reverify/series/hub passes)
+series	bqit	ok	1	0	next edition row present: bqit-2027 (row checked this run via reverify/series/hub passes)
+series	cargese-metasurfaces	ok	1	0	next edition row present: cargese-metasurfaces-2027 (row checked this run via reverify/series/hub passes)
+series	cargese-qt	ok	1	0	next edition row present: cargese-qt-2027 (row checked this run via reverify/series/hub passes)
+series	ccw-london	skipped	0	0	series not tracked: out of scope (critical-communications radio trade show)
+series	cewqo	ok	1	0	next edition row present: cewqo-2027 (row checked this run via reverify/series/hub passes)
+series	cleo	ok	1	0	next edition row present: cleo-2027 (row checked this run via reverify/series/hub passes)
+series	cleo-europe	ok	1	0	next edition row present: cleo-europe-2027 (row checked this run via reverify/series/hub passes)
+series	cleo-pr	ok	1	0	next edition row present: cleo-pr-2028 (row checked this run via reverify/series/hub passes)
+series	csw	ok	1	0	next edition row present: csw-2027 (row checked this run via reverify/series/hub passes)
+series	damop	ok	1	0	next edition row present: damop-2027 (row checked this run via reverify/series/hub passes)
+series	dgao	ok	1	0	next edition row present: dgao-2027 (row checked this run via reverify/series/hub passes)
+series	dpg-samop	ok	1	0	next edition row present: dpg-samop-2027 (row checked this run via reverify/series/hub passes)
+series	dpg-skm	ok	1	0	next edition row present: dpg-skm-2027 (row checked this run via reverify/series/hub passes)
+series	ecio	ok	1	0	next edition row present: ecio-2027 (row checked this run via reverify/series/hub passes)
+series	ecoc	ok	1	0	next edition row present: ecoc-2027 (row checked this run via reverify/series/hub passes)
+series	eftf-ifcs	ok	1	0	next edition row present: eftf-ifcs-2027 (row checked this run via reverify/series/hub passes)
+series	egas	ok	1	0	next edition row present: egas-2027 (row checked this run via reverify/series/hub passes)
+series	emrs-spring	ok	1	0	next edition row present: emrs-spring-2027 (row checked this run via reverify/series/hub passes)
+series	eosam	ok	1	0	next edition row present: eosam-2027 (row checked this run via reverify/series/hub passes)
+series	epic-imec	ok	1	0	next edition row present: epic-imec-2027 (row checked this run via reverify/series/hub passes)
+series	epic-manufacturing	skipped	0	0	series not tracked: low relevance
+series	epic-quantum	ok	1	0	next edition row present: epic-quantum-2027 (row checked this run via reverify/series/hub passes)
+series	epixfab-asia-europe	ok	1	0	next edition row present: epixfab-asia-europe-2026 (row checked this run via reverify/series/hub passes)
+series	epixfab-sp-summer-school	ok	1	0	next edition row present: epixfab-sp-summer-school-2027 (row checked this run via reverify/series/hub passes)
+series	eqtc	ok	1	0	next edition row present: eqtc-2026 (row checked this run via reverify/series/hub passes)
+series	erice-quantum-photonics	ok	1	0	next edition row present: erice-quantum-photonics-2028 (row checked this run via reverify/series/hub passes)
+series	eucas	ok	1	0	next edition row present: eucas-2027 (row checked this run via reverify/series/hub passes)
+series	europhoton	ok	1	0	next edition row present: europhoton-2028 (row checked this run via reverify/series/hub passes)
+series	fio	ok	1	0	next edition row present: fio-2027 (row checked this run via reverify/series/hub passes)
+series	fns	ok	1	0	next edition row present: fns-2027 (row checked this run via reverify/series/hub passes)
+series	for5044-polar-oxides-school	ok	1	0	next edition row present: for5044-polar-oxides-school-2027 (row checked this run via reverify/series/hub passes)
+series	frontiers-lmi	ok	1	0	next edition row present: frontiers-lmi-2027 (row checked this run via reverify/series/hub passes)
+series	glasgow-qnw	ok	1	0	next edition row present: glasgow-qnw-2026 (row checked this run via reverify/series/hub passes)
+series	grc-hybrid-sc-sm	ok	1	0	next edition row present: grc-hybrid-sc-sm-2027 (row checked this run via reverify/series/hub passes)
+series	grc-mech-quant	ok	1	0	next edition row present: grc-mech-quant-2028 (row checked this run via reverify/series/hub passes)
+series	grc-plasmonic-processes	ok	1	0	next edition row present: grc-plasmonic-processes-2027 (row checked this run via reverify/series/hub passes)
+series	grc-plasmonics-nano	ok	1	0	next edition row present: grc-plasmonics-nano-2028 (row checked this run via reverify/series/hub passes)
+series	grc-qclm	ok	1	0	next edition row present: grc-qclm-2027 (row checked this run via reverify/series/hub passes)
+series	grc-quantum-science	ok	1	0	next edition row present: grc-quantum-science-2028 (row checked this run via reverify/series/hub passes)
+series	grc-quantum-sensing	ok	1	0	next edition row present: grc-quantum-sensing-2027 (row checked this run via reverify/series/hub passes)
+series	grc-superconductivity	ok	1	0	next edition row present: grc-superconductivity-2027 (row checked this run via reverify/series/hub passes)
+series	hdqs	ok	1	0	next edition row present: hdqs-next (row checked this run via reverify/series/hub passes)
+series	icap	ok	1	0	next edition row present: icap-2028 (row checked this run via reverify/series/hub passes)
+series	icisct	skipped	0	0	series not tracked: out of scope
+series	icols	ok	1	0	next edition row present: icols-2027 (row checked this run via reverify/series/hub passes)
+series	icop	ok	1	0	next edition row present: icop-2028 (row checked this run via reverify/series/hub passes)
+series	icqe	ok	1	0	next edition row present: icqe (row checked this run via reverify/series/hub passes)
+series	icton	ok	1	0	next edition row present: icton-2027 (row checked this run via reverify/series/hub passes)
+series	ictp-winter-college-optics	ok	1	0	next edition row present: ictp-winter-college-optics-2027 (row checked this run via reverify/series/hub passes)
+series	ieee-qce	ok	1	0	next edition row present: ieee-qce27 (row checked this run via reverify/series/hub passes)
+series	ieee-qcnc	ok	1	0	next edition row present: ieee-qcnc-2027 (row checked this run via reverify/series/hub passes)
+series	ieee-qpain	ok	1	0	next edition row present: ieee-qpain-2027 (row checked this run via reverify/series/hub passes)
+series	ieee-rapid	ok	1	0	next edition row present: ieee-rapid-2027 (row checked this run via reverify/series/hub passes)
+series	ieee-siphotonics	ok	1	0	next edition row present: ieee-siphotonics-2027 (row checked this run via reverify/series/hub passes)
+series	ieee-sum	ok	1	0	next edition row present: ieee-sum-2027 (row checked this run via reverify/series/hub passes)
+series	iisw	ok	1	0	next edition row present: iisw-2027 (row checked this run via reverify/series/hub passes)
+series	inp-webinar	skipped	0	0	series not tracked: one-off project webinar (INPHOMIR ends 2027)
+series	inphomir-school	skipped	0	0	series not tracked: one-off project school (INPHOMIR ends 2027)
+series	ipc	ok	1	0	next edition row present: ipc-2026 (row checked this run via reverify/series/hub passes)
+series	ipr	ok	1	0	next edition row present: ipr-2027 (row checked this run via reverify/series/hub passes)
+series	iqn-summer-school	ok	1	0	next edition row present: iqn-summer-school-2027 (row checked this run via reverify/series/hub passes)
+series	iqt-nordics	ok	1	0	next edition row present: iqt-nordics-2027 (row checked this run via reverify/series/hub passes)
+series	isec	ok	1	0	next edition row present: isec-2027 (row checked this run via reverify/series/hub passes)
+series	islc	ok	1	0	next edition row present: islc-2028 (row checked this run via reverify/series/hub passes)
+series	issw	ok	1	0	next edition row present: issw-2028 (row checked this run via reverify/series/hub passes)
+series	it-fab-school	ok	1	0	next edition row present: it-fab-school-2027 (row checked this run via reverify/series/hub passes)
+series	lake-como	ok	1	0	next edition row present: lake-como-uqo-2027 (row checked this run via reverify/series/hub passes)
+series	laser-wop	ok	1	0	next edition row present: laser-wop-2027 (row checked this run via reverify/series/hub passes)
+series	les-houches-eqs	ok	1	0	next edition row present: les-houches-eqs-2027 (row checked this run via reverify/series/hub passes)
+series	les-houches-ftqc	ok	1	0	next edition row present: les-houches-ftqc-2027 (row checked this run via reverify/series/hub passes)
+series	les-houches-lowdim-fluids	ok	1	0	next edition row present: les-houches-lowdim-fluids-2027 (row checked this run via reverify/series/hub passes)
+series	les-houches-niqo	ok	1	0	next edition row present: les-houches-niqo-2027 (row checked this run via reverify/series/hub passes)
+series	les-houches-pa	ok	1	0	next edition row present: les-houches-pa-next (row checked this run via reverify/series/hub passes)
+series	les-houches-photonics-ai	ok	1	0	next edition row present: les-houches-photonics-ai-2027 (row checked this run via reverify/series/hub passes)
+series	les-houches-qnest	ok	1	0	next edition row present: les-houches-qnest-2027 (row checked this run via reverify/series/hub passes)
+series	mauterndorf	ok	1	0	next edition row present: mauterndorf-2027 (row checked this run via reverify/series/hub passes)
+series	meta	ok	1	0	next edition row present: meta-2027 (row checked this run via reverify/series/hub passes)
+series	mne	ok	1	0	next edition row present: mne-2027 (row checked this run via reverify/series/hub passes)
+series	moc	ok	1	0	next edition row present: moc-2027 (row checked this run via reverify/series/hub passes)
+series	nanolight	ok	1	0	next edition row present: nanolight-2027 (row checked this run via reverify/series/hub passes)
+series	nanometa	ok	1	0	next edition row present: nanometa-2028 (row checked this run via reverify/series/hub passes)
+series	nbqss	ok	1	0	next edition row present: nbqss-2027 (row checked this run via reverify/series/hub passes)
+series	nitrides-new-light	ok	1	0	next edition row present: nitrides-new-light-2027 (row checked this run via reverify/series/hub passes)
+series	noeks-18	ok	1	0	next edition row present: noeks-18-2027 (row checked this run via reverify/series/hub passes)
+series	nqcc-scalability	ok	1	0	next edition row present: nqcc-scalability-2027 (row checked this run via reverify/series/hub passes)
+series	nrw-nano	ok	1	0	next edition row present: nrw-nano-2027 (row checked this run via reverify/series/hub passes)
+series	oecc	ok	1	0	next edition row present: oecc-2027 (row checked this run via reverify/series/hub passes)
+series	ofc	ok	1	0	next edition row present: ofc-2027 (row checked this run via reverify/series/hub passes)
+series	omn	ok	1	0	next edition row present: omn-2027 (row checked this run via reverify/series/hub passes)
+series	onna	ok	1	0	next edition row present: onna-2027 (row checked this run via reverify/series/hub passes)
+series	opic	ok	1	0	next edition row present: opic-2027 (row checked this run via reverify/series/hub passes)
+series	opon	ok	1	0	next edition row present: opon-next (row checked this run via reverify/series/hub passes)
+series	optica-laser-congress	ok	1	0	next edition row present: optica-laser-congress-2027 (row checked this run via reverify/series/hub passes)
+series	optica-quantum	ok	1	0	next edition row present: optica-quantum-2027 (row checked this run via reverify/series/hub passes)
+series	optima	skipped	0	0	series not tracked: low relevance / unclear organiser
+series	owtnm	ok	1	0	next edition row present: owtnm (row checked this run via reverify/series/hub passes)
+series	pgc	skipped	0	0	series not tracked: low relevance
+series	photonics-days	ok	1	0	next edition row present: photonics-days-2027 (row checked this run via reverify/series/hub passes)
+series	photonics-north	ok	1	0	next edition row present: photonics-north-2027 (row checked this run via reverify/series/hub passes)
+series	photonics-switching	ok	1	0	next edition row present: psc-2027 (row checked this run via reverify/series/hub passes)
+series	photonics-west	ok	1	0	next edition row present: photonics-west-2027 (row checked this run via reverify/series/hub passes)
+series	pic-international	ok	1	0	next edition row present: pic-international-2027 (row checked this run via reverify/series/hub passes)
+series	pic-summit-europe	ok	1	0	next edition row present: pic-summit-europe-2027 (row checked this run via reverify/series/hub passes)
+series	piers	ok	1	0	next edition row present: piers-2027 (row checked this run via reverify/series/hub passes)
+series	q-expo	ok	1	0	next edition row present: q-expo-2027 (row checked this run via reverify/series/hub passes)
+series	q2b-chicago	ok	1	0	next edition row present: q2b-chicago-2026 (row checked this run via reverify/series/hub passes)
+series	qcmc	ok	1	0	next edition row present: qcmc-2027 (row checked this run via reverify/series/hub passes)
+series	qcrypt	ok	1	0	next edition row present: qcrypt-2027 (row checked this run via reverify/series/hub passes)
+series	qip	ok	1	0	next edition row present: qip-2027 (row checked this run via reverify/series/hub passes)
+series	qps	ok	1	0	next edition row present: qps-2028 (row checked this run via reverify/series/hub passes)
+series	qsl	ok	1	0	next edition row present: qsl-2027 (row checked this run via reverify/series/hub passes)
+series	quantum-effects	ok	1	0	next edition row present: quantum-effects-2027 (row checked this run via reverify/series/hub passes)
+series	quantum-korea	ok	1	0	next edition row present: quantum-korea-2027 (row checked this run via reverify/series/hub passes)
+series	quantum-meets	ok	1	0	next edition row present: quantum-meets-2027 (row checked this run via reverify/series/hub passes)
+series	quantum-networks-summit	ok	1	0	next edition row present: quantum-networks-summit-2027 (row checked this run via reverify/series/hub passes)
+series	quantum-photonics-erfurt	ok	1	0	next edition row present: quantum-photonics-erfurt-2027 (row checked this run via reverify/series/hub passes)
+series	quantum-tech-world	ok	1	0	next edition row present: quantum-tech-world-2027 (row checked this run via reverify/series/hub passes)
+series	quantumatter	ok	1	0	next edition row present: quantumatter-2027 (row checked this run via reverify/series/hub passes)
+series	qunew	ok	1	0	next edition row present: qunew-2027 (row checked this run via reverify/series/hub passes)
+series	rptu-cavity-week	ok	1	0	next edition row present: rptu-cavity-week-2027 (row checked this run via reverify/series/hub passes)
+series	sheffield-qon-winter-school	ok	1	0	next edition row present: sheffield-qon-winter-school-2027 (row checked this run via reverify/series/hub passes)
+series	sioe	ok	1	0	next edition row present: sioe-2027 (row checked this run via reverify/series/hub passes)
+series	spie-clp-apc	ok	1	0	next edition row present: spie-clp-apc-2027 (row checked this run via reverify/series/hub passes)
+series	spie-ds	ok	1	0	next edition row present: spie-ds-2027 (row checked this run via reverify/series/hub passes)
+series	spie-oo	ok	1	0	next edition row present: spie-oo-2027 (row checked this run via reverify/series/hub passes)
+series	spie-op	ok	1	0	next edition row present: spie-op-2027 (row checked this run via reverify/series/hub passes)
+series	spie-pe	ok	1	0	next edition row present: spie-pe-2028 (row checked this run via reverify/series/hub passes)
+series	spie-pfq	ok	1	0	next edition row present: spie-pfq-2027 (row checked this run via reverify/series/hub passes)
+series	spw	ok	1	0	next edition row present: spw-2027 (row checked this run via reverify/series/hub passes)
+series	tfln	ok	1	0	next edition row present: tfln-2027 (row checked this run via reverify/series/hub passes)
+series	tqc	ok	1	0	next edition row present: tqc-2027 (row checked this run via reverify/series/hub passes)
+series	weh-dm-quantum-devices	ok	1	0	next edition row present: weh-dm-quantum-devices-2027 (row checked this run via reverify/series/hub passes)
+series	weh-entanglement	ok	1	0	next edition row present: weh-entanglement-2027 (row checked this run via reverify/series/hub passes)
+series	weh-molecules-qt	ok	1	0	next edition row present: weh-molecules-qt-2027 (row checked this run via reverify/series/hub passes)
+series	weh-photonic-qi	ok	1	0	next edition row present: weh-photonic-qi-2027 (row checked this run via reverify/series/hub passes)
+series	weh-qt-atomic-armenia	ok	1	0	next edition row present: weh-qt-atomic-armenia-2027 (row checked this run via reverify/series/hub passes)
+series	weh-quantum-magnonics	ok	1	0	next edition row present: weh-quantum-magnonics-2027 (row checked this run via reverify/series/hub passes)
+series	weh-schroedinger-cats	ok	1	0	next edition row present: weh-schroedinger-cats-2027 (row checked this run via reverify/series/hub passes)
+series	weh-snspd	ok	1	0	next edition row present: weh-snspd-2027 (row checked this run via reverify/series/hub passes)
+series	wolte	ok	1	0	next edition row present: wolte-2028 (row checked this run via reverify/series/hub passes)
+series	world-of-quantum	ok	1	0	next edition row present: world-of-quantum-2027 (row checked this run via reverify/series/hub passes)
+series	wsof	ok	1	0	next edition row present: wsof-2027 (row checked this run via reverify/series/hub passes)
+hub	Wilhelm und Else Heraeus-Stiftung (seminar calendar)	ok	0	0	new hub fetched during discovery this run: https://www.we-heraeus-stiftung.de/veranstaltungen/kategorie/we-heraeus-seminar/
+hub	quantum.info conference list (A. White)	ok	0	0	new hub fetched during discovery this run: https://quantum.info/conf/2027.html
+hub	Optica annual events calendar PDF	ok	0	0	new hub fetched during discovery this run: https://opticaorg-dev-cac7d2csctagc8bm.z01.azurefd.net/$web/optica/media/files/events/focus/2026/optica_2027_annual_calendar_final-web.pdf
+hub	EPS Quantum Electronics & Optics Division	ok	0	0	new hub fetched during discovery this run: https://eps.org/who-we-are/members/divisions-and-groups/quantum-electronics-optics-division/
+hub	WE-Heraeus binational seminars category	ok	0	0	new hub fetched during discovery this run: https://www.we-heraeus-stiftung.de/veranstaltungen/kategorie/binationales-we-heraeus-seminar/
+hub	Andrew White quantum conference list	ok	0	0	new hub fetched during discovery this run: https://quantum.technology/conf/2027.html
+hub	ETH Zurich TFLN conference	ok	0	0	new hub fetched during discovery this run: https://tfln.ethz.ch/
+hub	ePIXfab events/training	ok	0	0	new hub fetched during discovery this run: https://epixfab.eu/en
+hub	Benasque yearly conference list	ok	0	0	new hub fetched during discovery this run: https://benasque.org/new_general/cgi-bin/years.pl?ano=2027
+hub	Les Houches School of Physics programme	ok	0	0	new hub fetched during discovery this run: https://www.houches-school-physics.com/program/program-2027/program-2027-1733272.kjsp
+hub	IESC Cargèse schedule of events	ok	0	0	new hub fetched during discovery this run: https://iesc.universita.corsica/article.php?id_art=2686&id_site=46&lang=en
+query	group mail inbox scan (last 8 days)	skipped	0	0	no mail tool for the group inbox connected in this session
+hub	WebFetch access	failed	0	0	WebFetch DNS-blocked for most hosts (optica.org, spie.org, dpg-physik.de, benasque.org, houches-school-physics.com, ...); official pages read via Exa fetch instead; spie.org returned empty pages -> SPIE data via lux.spie.org/venue listings

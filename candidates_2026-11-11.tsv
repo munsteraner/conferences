@@ -1,0 +1,96 @@
+name	url	reason	found_by
+Adaptive Measurements and Dissipation Engineering in Quantum Systems — Les Houches Summer School 2027	https://www.houches-school-physics.com/program/program-2027/	duplicate of existing row les-houches-eqs-2027	
+Quantum Photonics Spotlight 2028	https://phoqs.uni-paderborn.de/en/veranstaltungen/quantum-photonics-spotlight-2028	handled by renaming existing row qps-2027 -> qps-2028	
+2nd Int. Conf. on Optical Communication, Photonics, Telecommunications, and Intelligent Machine Applications	TBA	low relevance / unclear organiser (Tashkent); rejected by series check	
+Gordon Research Conference — Computational Optics and Intelligent Photonic Devices 2027	https://www.grc.org/computational-optics-and-intelligent-photonic-devices-conference/2027/	computational optics - out of scope (series check rejected)	
+Optica Design and Fabrication Congress 2027 (Antwerp, 11-15 Apr 2027)	https://www.optica.org/events/congress/optical_design_and_fabrication_congress/	out of scope (optical design/fabrication)	hubs1
+Optica Biophotonics Congress 2027 (Denver, 18-21 Apr 2027)	https://www.optica.org/events	out of scope (biophotonics)	hubs1
+Optica ImageSense Congress 2027 (Ottawa, 11/12-16 Jul 2027)	https://www.optica.org/events/congress/optica_imagesense_congress/about/	imaging/sensing; quantum sensing only a minor track - out of core scope	hubs1
+Optica Incubator meetings	https://www.optica.org/events/incubator_meetings/	invitation-only; no 2026-27 quantum incubators listed	hubs1
+Optica Quantum Executive Forum 2027 (Copenhagen, 7 Jun 2027)	https://www.optica.org/industry/industry_events/	industry forum co-located with optica-quantum-2027; covered by that row	hubs1
+SPIE Quantum Catalyst 2026 (Boulder, 17-18 Nov 2026)	https://spie.org/	industry/business supply-chain event, not research conference	hubs1
+SPIE Quantum West 2027	https://lux.spie.org/conferences-and-exhibitions/photonics-west/program/conferences/quantum-west	part of Photonics West 2027 (photonics-west-2027)	hubs1
+SPIE Optical Metrology / Digital Optical Technologies 2027 (Munich)	https://world-of-photonics.com/en/congress/for-speaker/	out of scope (metrology/digital optics); co-located with cleo-europe-2027	hubs1
+IEEE ONDM 2027, ETOP 2027, ICAIT 2026, BPC 2026, Photonics AI 2028	https://ieeephotonics.org/conferences/	out of scope (network design / education / biomedical / AI)	hubs1
+GRC Label-Free Single Molecule Sensing 2027	https://www.grc.org/label-free-single-molecule-sensing-conference/2027/	biosensing focus; out of scope	hubs1
+GRC Topological and Correlated Matter 2027; Spin Dynamics in Nanostructures 2027; Quantum Biology 2027; Laser Diagnostics 2027	https://www.grc.org/	out of scope	hubs1
+GRC Atomic Physics	https://www.grc.org/atomic-physics-conference/	series now inactive; no 2027 edition	hubs1
+WE-Heraeus: Generative Modeling in Quantum Science; Design of Driven Systems; QLife; Multi-Species Trapped-Ion Quantum Logic; Neutral-Atom QIS; Atoms & Molecules with Long-Range Interactions; Ultrafast Science; Hybrid-tronics; Low-dim. nanomaterials (Belgrade); Computational Optical Microscopy (past)	https://www.we-heraeus-stiftung.de/veranstaltungen/	out of scope (atoms/ions/ML/magnetism/bio) or past	hubs1
+Bad Honnef Physics School Degenerate Quantum Gases 2027	https://www.dpg-physik.de/veranstaltungen/2027/degenerate_quantum_gases	cold atoms, out of scope	hubs1
+Europhoton 2026 (Arcachon, 21-25 Sep 2026)	https://www.europhoton.org/	past	hubs1
+Critical Communications World 2027 (11-13 May 2027, Amsterdam)	https://www.critical-communications-world.com/	out of scope: TCCA mission-critical radio/broadband trade show, not quantum communication	series2
+OPTIMA 2026/2027 (Intl Conf. on Optical Communication, Photonics, Telecom & Intelligent Machine Applications, Tashkent)	https://ieeephotonics.org/conferences/	low relevance: generic regional telecom/IT conference (2nd ed. 4-5 Dec 2026 Tashkent)	series2
+Photonics Global Conference (PGC) 2026/2027	https://www.ieee-pgc.org/	low relevance: broad generic photonics conference in China (PGC2026 16-19 Oct 2026 Rizhao, already past)	series2
+ICISCT (Intl Conf. on Information Science and Communications Technologies)	TBA	out of scope: IT/communications engineering conference	series2
+INPHOMIR webinar series / INPHOMIR School next edition	https://inphomir.eu/inphomir-school/	one-off EU project activities (project ends 30 Nov 2027); no further school announced - no placeholder warranted	series2
+EPIC Workshop on Efficient Manufacturing – Photonics made in Europe (12 Jan 2027, online)	https://epic-photonics.com/epic-events/	low relevance: online industry manufacturing workshop; EPIC's quantum/PIC meetings added instead	series2
+GMEPQT-2027 Photonics and Quantum Technologies, Barcelona 21-23 Jun 2027	https://gmepqt2027.com/	likely commercial/predatory 'global meet' format (no named committee, abstract deadline a year early); not added	series2
+QTML 2026 (6-11 Dec 2026, Stellenbosch)	https://qtml2026.nithecs.ac.za/	out of scope: quantum machine learning theory/algorithms (annual, ~Nov-Dec)	series2
+Erice Attosecond School (30 Apr-6 May 2027)	https://www.attosecond-school.it/programme/	out of scope: attosecond science	series2
+Gordon Research Conference on 'Quantum Photonics'	https://www.grc.org/find-a-conference/	does not exist; closest GRCs already tracked (QCLM 2027, Quantum Sensing 2027, Plasmonics & Nanophotonics). GRC Lasers in Micro/Nano/Bio is inactive	series2
+International Conference on Quantum Information Processing and Communication (QIPC)	https://qipc2011.ethz.ch/	series defunct since ~2013 (EU QUIE2T coordination action ended); no 2027 edition	series2
+Optica Quantum 2.0 2027	https://www.optica.org/events/topical_meetings/quantum/	duplicate of optica-quantum-2027	series2
+CLEO Pacific Rim 2027	https://www.cleopacificrim.com/home/future-dates/	no 2027 edition (biennial); added cleo-pr-2028 instead	series2
+NanoMeta 2027	https://eps.org/highlights-of-nanometa-2026/	no 2027 edition; next is Jan 2028 (added nanometa-2028)	series2
+GRC Computational Optics and Intelligent Photonic Devices 2027 (25-30 Jul 2027)	https://www.grc.org/computational-optics-and-intelligent-photonic-devices-conference/2027/	low relevance: computational imaging focus (noted for completeness)	series2
+International Conference on Quantum Photonics (ICQP) - WASET	https://waset.org/quantum-photonics-conference	predatory WASET series	queries
+GMEPQT-2027 Photonics and Quantum Technologies, Barcelona	https://gmepqt2027.com/	likely commercial/predatory template conference (placeholder CMS content, no organisers named)	queries
+AGSOPTICS2027 Global Summit on Optics, Photonics and Lasers, Brussels	https://vividglobalsummits.com/2027/optics-photonics	predatory 'global summit' organiser	queries
+ICNNQ 2027 (Nano-photonics, Nano-optoelectronics and Quantum Technology)	https://www.icnnq.iis.u-tokyo.ac.jp/	sub-conference of OPIC'27 - covered by opic-2027 (submission deadline 2026-12-11 could be noted there)	queries
+SPIE Quantum West 2027	https://www.gophotonics.com/events/details/1172-spie-quantum-west-expo-2027	part of photonics-west-2027	queries
+World of Quantum 2027 (Munich trade fair)	https://world-of-photonics.com/en/congress/	trade fair co-located with cleo-europe-2027	queries
+7th/8th New Photon-Detectors workshop (PD27), Beijing May 2027	https://cerncourier.com/a/photon-detectors-light-up-bologna/	HEP photodetector (SiPM/MCP) focus; out of scope; no official page	queries
+FAST 2027 picosecond timing detectors workshop, Elba	https://indico.cern.ch/event/1657938/	HEP timing detectors; out of scope	queries
+EuroSOI-ULIS 2027, Braga	https://www.events.inl.int/eurosoi-ulis-2027	microelectronics/SOI devices; photonics marginal	queries
+SEMI 3D & Systems Summit 2027, Grenoble	https://www.semi.org/eu/connect/events/3d-and-systems-summit	industry packaging summit; out of scope	queries
+Optica Advanced Manufacturing Alliance 2027 (Eindhoven area, May 11-13)	https://www.optica.org/events/industry_events/2027/optica_advanced_manufacturing_alliance/agenda/	industry manufacturing meeting, low relevance	queries
+ICMAT 2027 Symposium G3 Next-Generation Integrated Photonics, Singapore	https://icmat2027.mrs.org.sg/?p=2167	non-European materials congress symposium, dates TBC; low relevance	queries
+Photonics Spectra Integrated Photonics Summit / Quantum Summit 2027 (virtual)	https://events.photonics.com/Event.aspx?EID=66	free vendor webinar series, not a scientific meeting	queries
+C-PIC Future Leaders sandpit, Jan 12-14 2027 (CORNERSTONE Southampton)	https://thequantuminsider.com/2026/09/21/new-sandpit-program-targets-quantum-silicon-photonics-platforms/	UK funding sandpit, not an open conference	queries
+ICFO-Wits Frontiers Research School, Johannesburg Jan 2027	https://intraweb.icfo.eu/services/getEventPdf/en_US/4329	undergrad/early-PhD school outside Europe; low relevance	queries
+ICTP Winter College on Optics 2027 (global health photonics)	https://indico.ictp.it/event/11411	out of scope (biophotonics for global health)	queries
+IEEE ICC 2027 Quantum4Wireless workshop	https://sites.google.com/view/icc27-quantum4wireless	wireless communications focus; out of scope	queries
+SiRF 2027 (Silicon Monolithic ICs in RF Systems), Tampa	https://www.radiowirelessweek.org/sirf2027cfp/	RF electronics; silicon photonics only a side topic	queries
+SFO Thematic School Lithium Niobate (Les Houches, May 2025)	https://www.sfoptique.org/pages/sfo/ecoles-thematiques/ecole-thematique-2025/	past; annual SFO school changes topic (2026 edition March 2026), no LN-specific 2027 edition found	queries
+Photonics in Quantum Computing workshop, Jena (Sep 16-17 2026)	https://www.asp.uni-jena.de/18920/photonics-in-quantum-computing	past	queries
+ChipLight summer school Riga / PQChips 2026 Gdansk / Q|School Boulder 2026 / INGEN2026	https://www.unibg.it/studiare/frequentare/summer-school/chiplight-building-the-future-of-integrated-photonics	past 2026 editions; no 2027 editions announced	queries
+Quantum Photonics Development in the Baltic Region, Riga (Feb 2026)	https://www.cfi.lu.lv/en/events/day/event/e/international-conference-on-quantum-photonics-development-in-the-baltic-region/	past; no next edition announced	queries
+Journal special issues (JQE, JSTQE, Sci Rep TFLN/nonlinear collections)	https://ieeephotonics.org/wp-content/uploads/2026/04/JQE_Quantum_Call_V4.pdf	journal calls, not events	queries
+GMEPQT-2027 Photonics and Quantum Technologies, Barcelona	https://gmepqt2027.com/	looks like a commercial/predatory event (placeholder CMS text, no committee); out of scope	gap
+WASET International Conference on Quantum Photonics (ICQP) 2027 Zurich/Chisinau/Dubai	https://waset.org/quantum-photonics-conference	predatory WASET series	gap
+conferenceindex ICEQIS/ICQIO/ICQCMC etc. 2027	https://conferenceindex.org/conferences/quantum	predatory/aggregator-only series	gap
+Quantum Futur (BMBF/BMFTR)	https://quantensysteme.info/quantum-future-junior-research-groups	funding programme for junior research groups, not an event	gap
+QuantERA Strategic Conference 2026	https://quantera.eu/strategic-conference-impact-of-quantera-2016-2026/	past (Sep 2026) and invitation-only; no 2027 QuantERA event announced	gap
+QIA Community Event 2026 Lisbon	https://quantuminternetalliance.org/news/	past (28-29 Sep 2026); no 2027 date announced	gap
+Jena LIGHT 2026 Photonics in Quantum Computing workshop	https://www.asp.uni-jena.de/18920/photonics-in-quantum-computing	past (16-17 Sep 2026); watch for 2027 edition	gap
+Les Houches Fault-Tolerant Quantum Computing 2027	https://www.houches-school-physics.com/program/program-2027/fault-tolerant-quantum-computing-1735191.kjsp	QEC theory, out of scope	gap
+Quantum Systems at the Brink 2027 (Rastatt)	https://indico.kit.edu/event/5754/	mathematical physics, out of scope	gap
+Superconducting Qubit Readout Workshop 2027 (RIKEN)	https://rqc.riken.jp/sqrw2027/	superconducting qubit readout, too far from scope	gap
+CEC/ICMC 2027 Knoxville	https://www.cec-icmc.org/2027/	cryogenic engineering/materials, peripheral	gap
+Photonics Spectra Quantum Summit 2027 (virtual)	https://events.photonics.com/Event.aspx?EID=68	vendor webinar	gap
+IQST Day 2027	https://www.iqst.org/news/upcoming-events/	internal cluster event	gap
+WE-Heraeus Quantum Materials and Devices for Dark Matter Detection 2027	https://www.we-heraeus-stiftung.de/veranstaltungen/quantum-materials-and-devices-for-dark-matter-detection/	dark-matter detector focus, peripheral (note: superconducting detectors)	gap
+Optica Incubator meetings	https://www.optica.org/events/incubator_meetings/	no 2027 quantum-photonics incubator listed (2025 had Cryogenic Integrated Photonics incubator)	gap
+International Conference on Integrated Quantum Photonics (ICIQP)	http://iciqp2018.lip6.fr/	series dormant since 2018; no 2027 edition found	gap
+Asia Communications and Photonics Conference 2026 (ACP 2026)	https://www.acpconf.com/	past: held 2026-11-01..04 Hangzhou (before run date); acp-2027 placeholder added instead	series1
+31st Microoptics Conference (MOC 2026)	https://www.comemoc.com/topics_e.html	past: 2026-09-27..30 Brussels; moc-2027 added	series1
+PIERS 2026 Suzhou	https://www.piers.org/	past	series1
+WASET 'International Conference on Optics, Lasers and Spectroscopy (ICOLS)' 2026/2027 (Zurich/London/Paris...)	https://waset.org/optics-lasers-and-spectroscopy-conference	different/predatory event sharing ICOLS acronym; not the laser spectroscopy series	series1
+WASET 'International Conference on Optics and Photonics (ICOP)' 2027 (Rome/Venice/Florence)	https://conferenceindex.org/event/international-conference-on-optics-and-photonics-icop-2027-may-rome-it	predatory WASET events, not the SIOF Italian Conference on Optics and Photonics	series1
+Power Sources Conference PSC 2027	https://powersourcesconference.com/2027_PSC_Call_for_Papers.pdf	acronym clash, out of scope	series1
+Cold-Atoms School: Quantum Simulation with Ultracold Atoms, Les Houches 2027-10-18..29	https://www.houches-school-physics.com/program/program-2027/	out of core scope (pure cold atoms)	series1
+Les Houches: Out of Equilibrium Physics in Low Dimensional Quantum Fluids (Mar 14-19 2027)	https://www.houches-school-physics.com/program/program-2027/	peripheral (quantum fluids incl. photonic platforms) — out of core scope	hubs2
+Les Houches: Physics with Trapped Charged Particles (Jan 11-22 2027)	https://www.houches-school-physics.com/program/program-2027/	out of scope (ion traps)	hubs2
+Les Houches: Cold-Atoms School (Oct 18-29 2027)	https://www.houches-school-physics.com/program/program-2027/	out of scope (cold atoms)	hubs2
+Benasque: Winter School on Ultracold Quantum Many-Body Systems 2027	https://www.benasque.org/new_general/cgi-bin/years.pl?ano=2027	out of scope	hubs2
+Benasque: AMO systems as sensors of gravitational physics 2027 (May 9-15)	https://www.benasque.org/new_general/cgi-bin/years.pl?ano=2027	out of scope	hubs2
+Benasque: untitled 2027 workshop organised by Balducci/Brighi/Ciccarello/Nunnenkamp/Porras/Roccati	https://www.benasque.org/new_general/cgi-bin/years.pl?ano=2027	title/dates not retrievable; likely non-Hermitian/open quantum systems theory — peripheral; check manually	hubs2
+Erice Attosecond School 2027 (Apr 30-May 6)	https://www.attosecond-school.it/programme/	out of scope (attosecond science)	hubs2
+Erice ISAMS 40th Workshop Matter physics and photonics (Nov 30-Dec 5 2026)	https://ettoremajoranafoundation.com/wp-content/uploads/2026/03/Summary-2026-1-1.pdf	luminescent materials/spectroscopy focus — peripheral; could be added as relevance-2 if desired	hubs2
+Cargèse MesoSchool 2027 (Oct 5-15)	https://iesc.universita.corsica/article.php?id_art=4833&id_site=46&lang=fr	mesoscopic electronics — peripheral	hubs2
+ICTP QCSC Workshop 2027 / Quantum Complexity Beyond Entanglement 2027	https://indico.ictp.it/category/2l131/	quantum computing theory/software — out of scope	hubs2
+MCQST SimQuDyn 2027 (Mar 22-25, Munich)	https://www.theorie.physik.uni-muenchen.de/activities/workshops/simqudyn2027/index.html	many-body simulation theory — out of scope	hubs2
+MCQST Summer Bachelor Program 2027	https://www.mcqst.de/support/summer-bachelor-program/	undergraduate programme, not a conference	hubs2
+EPIC online technology meetings (Photonics for Quantum Industry 2026-11-23; Quantum & Satellite Comm 2027-05-24)	https://epic-photonics.com/epic-events/	short online industry webinars — not tracked	hubs2
+PhotonHub European Photonics Venture Forum 2027 (Valencia, Feb 24-25)	https://www.photonhub.eu/events/	investor/startup forum — out of scope	hubs2
+QuTech events page	https://qutech.nl/events/	no upcoming events listed	hubs2
